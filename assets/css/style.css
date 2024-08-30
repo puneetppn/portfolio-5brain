@@ -2,31 +2,19 @@
     font-family: "Kristen ITC Regular";
     src: url("C:/Users/jayan/OneDrive/Desktop/5Brain/assets/fonts/kristen-itc/Kristen-ITC-Regular.woff");
 }
-
 :root {
-    --body: "Inria Sans", sans-serif;
-    --heading: "Mochiy Pop P One", sans-serif;
+  --body: "Inria Sans", sans-serif;
+  --heading: "Mochiy Pop P One", sans-serif;
 }
-
 body {
     background-color: #f0f8ff;
 }
-
-body,
-a,
-p {
-    font-family: sans-serif;
-    /* This is fallback font for old browsers */
+body, a, p {
+    font-family: sans-serif; /* This is fallback font for old browsers */
     font-family: var(--body);
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--heading);
+h1, h2, h3, h4, h5, h6 {
+   font-family: var(--heading);
 }
 
 section {
@@ -54,22 +42,18 @@ form label {
     color: #FFB700;
     margin: 25px 0;
 }
-
 .what-is-brain-abilities .heading-highlight {
     color: #fff;
 }
-
 .section-header-title {
     font-size: 36px;
 }
-
 .section-header-content {
     font-size: 24px;
     font-weight: bold;
     max-width: 860px;
     margin: auto;
 }
-
 .header-nav-item .nav-link {
     font-family: var(--body);
     font-style: normal;
@@ -77,14 +61,12 @@ form label {
     font-weight: 600;
     max-width: 150px;
 }
-
 .navbar {
     background-color: rgba(0, 0, 0, 0.50) !important;
     position: absolute;
     width: 100%;
     z-index: 10;
 }
-
 .ppn-btn {
     background-color: #EE7A13;
     color: #fff;
@@ -94,19 +76,16 @@ form label {
     border-radius: 30px;
     border: 2px solid #EE7A13;
 }
-
 .ppn-btn:hover {
     background-color: transparent;
     color: #EE7A13;
     border-color: #EE7A13;
 }
-
 .navbar .ppn-btn:hover {
     background-color: transparent;
     color: #fff;
     border-color: #fff;
 }
-
 .hero {
     background: url('../../assets/images/hero-bg.png') no-repeat center center;
     background-size: cover !important;
@@ -115,7 +94,6 @@ form label {
     text-align: center;
     position: relative;
 }
-
 .hero-content {
     position: relative;
     background-color: rgb(0 0 0 / 80%);
@@ -128,43 +106,35 @@ form label {
     margin-bottom: 0.5em;
     font-weight: 500;
 }
-
 .hero p {
     font-size: 20px;
     margin-bottom: 1em;
     font-weight: bold;
 }
-
 .section {
     padding: 4em 2em;
     text-align: center;
 }
-
 .section h2 {
     font-size: 2em;
     margin-bottom: 1em;
 }
-
 .section p {
     font-size: 1.25em;
     margin-bottom: 20px;
 }
-
 .card img {
     width: 100%;
     border-radius: 0.5em;
 }
-
 .card h3 {
     font-size: 1.5em;
     margin-top: 1em;
 }
-
 .card p {
     font-size: 1em;
     margin-top: 0.5em;
 }
-
 .header-nav-item span {
     width: 40px;
     height: 40px;
@@ -212,7 +182,6 @@ form label {
 .ppn-what-is-card {
     border-radius: 10px;
 }
-
 .ppn-what-is-card img {
     max-width: 75px;
 }
@@ -357,7 +326,7 @@ section * {
     font-size: 22px;
     font-family: var(--heading);
     max-width: 1070px;
-    /*    margin: auto;*/
+/*    margin: auto;*/
 }
 
 .process {
@@ -496,15 +465,13 @@ footer {
     position: relative;
     z-index: 2;
 }
-
 .above-footer .text {
     font-family: "Mochiy Pop P One", sans-serif;
     font-weight: 100;
     font-size: 20px;
 }
 
-.footer-newsletter,
-.footer-copyright {
+.footer-newsletter, .footer-copyright {
     max-width: 1296px;
     padding: 0 12px;
     margin: auto !important;
@@ -692,8 +659,7 @@ footer {
     vertical-align: middle;
 }
 
-.assessment-components-table th,
-.assessment-components-table td {
+.assessment-components-table th, .assessment-components-table td {
     border: 1px solid #989898;
 }
 
@@ -718,7 +684,6 @@ footer {
 .components_chart_table {
     margin-top: 70px;
 }
-
 .components_chart_table {
     border: 1px solid #919191;
     text-align: center;
@@ -760,12 +725,7 @@ footer {
     padding: 0 0 0 0px;
 }
 
-.components_chart_table table .memory_c table .memory_c table td[align="left"],
-.components_chart_table table .cognitive_visual td[align="left"],
-.components_chart_table table .logical_reasoning td[align="left"],
-.components_chart_table table .brain_speed td[align="left"],
-.components_chart_table table .attention td[align="left"],
-.components_chart_table table .table-heading td[align="left"] {
+.components_chart_table table .memory_c table .memory_c table td[align="left"], .components_chart_table table .cognitive_visual td[align="left"], .components_chart_table table .logical_reasoning td[align="left"], .components_chart_table table .brain_speed td[align="left"], .components_chart_table table .attention td[align="left"], .components_chart_table table .table-heading td[align="left"] {
     padding: 20px 0px 20px 20px;
 }
 
@@ -773,11 +733,7 @@ table {
     border-collapse: collapse;
 }
 
-.components_chart_table table .cognitive_visual td,
-.components_chart_table table .logical_reasoning td,
-.components_chart_table table .brain_speed td,
-.components_chart_table table .attention td,
-.components_chart_table table .table-heading td {
+.components_chart_table table .cognitive_visual td, .components_chart_table table .logical_reasoning td, .components_chart_table table .brain_speed td, .components_chart_table table .attention td, .components_chart_table table .table-heading td {
     padding: 20px 10px;
 }
 
@@ -852,72 +808,59 @@ img.arrow_p {
 .modal {
     --bs-modal-width: 700px;
 }
-
 .modal-content {
     border-radius: 10px;
     padding: 15px;
 }
-
 .form-logo {
     width: 80px;
     display: block;
     margin: 0 auto 20px;
 }
-
 .modal-title {
     font-family: var(--heading);
     font-size: 32px;
     margin-bottom: 15px;
     text-align: center;
 }
-
 .modal-subtitle {
     font-size: 18px;
     text-align: center;
     margin-bottom: 30px;
     color: #424242;
 }
-
 .btn-cancel {
     background-color: white;
     border: 1px solid #fd7e14;
     color: #fd7e14;
 }
-
 .btn-cancel:hover {
     background-color: #fd7e14;
     color: white;
 }
-
 .btn-confirm {
     background-color: #fd7e14;
     border: none;
     color: #fff;
     padding: 10px 25px;
 }
-
 .btn-confirm:hover {
     background-color: #e66a00;
     color: #fff;
 }
-
 .login-link {
     text-align: center;
     margin-top: 20px;
 }
-
 a {
     color: #fd7e14;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
 
-.form-control,
-.input-group .input-group-text,
-.form-select {
+.form-control, .input-group .input-group-text, .form-select {
     min-height: 44px;
 }
 
@@ -1086,9 +1029,7 @@ button.btn-close {
 }
 
 .brain-tabs .nav-link.active {
-    background: url(https://www.transparenttextures.com/patterns/skulls.png), #4CAF50;
-    border-color: #00897B;
-    color: #fff;
+    background: url(https://www.transparenttextures.com/patterns/skulls.png), #4CAF50;border-color: #00897B;color: #fff;
 }
 
 .brain-tabs .nav-link {
@@ -1152,7 +1093,6 @@ button.btn-close {
     border: 1px solid #4CAF50;
     border-radius: 10px;
 }
-
 .brain-tabs-content .btn-confirm {
     background-color: #4CAF50;
     color: #fff;
@@ -1340,11 +1280,11 @@ button.btn-close {
     padding: 25px;
     overflow-y: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none;
+    scrollbar-width: none; 
 }
 
 #sidebar-wrapper::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 #sidebar-wrapper.full {
@@ -1395,8 +1335,10 @@ button.btn-close {
     width: 100%;
     margin-left: 320px;
     transition: 0.3s ease all;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-
 .toggled #page-content-wrapper {
     margin-left: 120px;
 }
@@ -1587,11 +1529,10 @@ button.btn-close {
     flex-wrap: wrap;
 }
 
-#export-form .form-group input.form-control,
-#export-form .form-group select.form-control {
-    /*    width: unset;*/
-    flex: 1;
-    border-radius: 30px;
+#export-form .form-group input.form-control, #export-form .form-group select.form-control {
+/*    width: unset;*/
+flex: 1;
+border-radius: 30px;
 }
 
 .export-wrap .card-body {
@@ -1613,8 +1554,7 @@ button.btn-close {
     border-collapse: collapse;
 }
 
-.data-table tr th,
-.data-table tr td {
+.data-table tr th, .data-table tr td {
     vertical-align: middle;
     border: 1px solid #cfcfcf;
 }
@@ -1683,9 +1623,7 @@ p.ques-content {
     right: 0;
 }
 
-.sidebar-contact input,
-.sidebar-contact textarea,
-.sidebar-contact select {
+.sidebar-contact input, .sidebar-contact textarea, .sidebar-contact select {
     z-index: 100;
     width: 100%;
     height: 36px;
@@ -1902,45 +1840,92 @@ p.ques-content {
     margin-bottom: 20px;
 }
 
+.dash-assessment-auditory-memory-auditory_number form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.dash-assessment-auditory-memory.dash-assessment-auditory-memory-auditory_number:before {
+    background-image: url(../../assets/images/Auditory-Number1.png), url(../../assets/images/Auditory-Number2.png), url(../../assets/images/Auditory-Number3.png), url(../../assets/images/Auditory-Number4.png);
+    background-position: top left, top 30px right 40px, bottom 5px left 50px, bottom 0px right 0px;
+    background-size: 210px, 160px, 200px, 260px;
+}
+
+.dash-assessment-auditory-memory.dash-assessment-auditory-memory-auditory_number {
+    background-image: url(../../assets/images/Auditory-Number-bg.jpg);
+}
+
+div#memory_board>div {
+    background: url(../../assets/images/Matching-Number-Card-ques.png) 0% 0% / 75px 150px no-repeat;
+    border: #000 1px solid;
+    width: 75px;
+    height: 150px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+div#memory_board {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.dash-assessment-visual-memory.dash-assessment-visual-memory-matching_number_cards {
+    background-image: url(../../assets/images/Matching-Number-Cards-bg.jpg);
+}
+
+.dash-assessment-visual-memory.dash-assessment-visual-memory-matching_number_cards:before {
+    background-image: url(../../assets/images/Matching-Number-Cards1.png), url(../../assets/images/Matching-Number-Cards2.png), url(../../assets/images/Matching-Number-Cards3.png), url(../../assets/images/Matching-Number-Cards4.png);
+    background-position: top 20px left, top right, bottom 10px left -20px, bottom 0px right 10px;
+    background-size: 290px, 240px, 230px, 250px;
+}
+
+.dash-assessment-logical-reasoning.dash-assessment-logical-reasoning-pattern_sequencing {
+    background-image: url(../../assets/images/Pattern-Sequencing-bg.jpg);
+}
+
+.dash-assessment-logical-reasoning.dash-assessment-logical-reasoning-pattern_sequencing:before {
+    background-image: url(../../assets/images/Pattern-Sequencing1.png), url(../../assets/images/Pattern-Sequencing2.png), url(../../assets/images/Pattern-Sequencing3.png), url(../../assets/images/Pattern-Sequencing4.png);
+    background-position: top 0px left, top right, bottom 0px left 30px, bottom 0px right 0px;
+    background-size: 360px, 280px, 170px, 340px;
+}
+
 /*media queries*/
 @media (max-width: 576px) {
     .mindset-content {
         padding: 0 15px 0 20px;
     }
-
     .section-features {
         padding-bottom: 380px !important;
         background-size: 400px !important;
     }
-
     .assessment-components-table tbody tr td {
         padding: 15px 20px;
     }
 }
-
 @media (min-width: 767px) and (max-width: 991px) {
     .section-features {
         background-size: 40%;
         background-position: 100% 100%;
     }
 }
-
 @media (max-width: 767px) {
     .mindset-content {
         padding: 0 15px 0 70px !important;
     }
-
     .newsletter {
         background-size: 100% 80%;
         flex-direction: column;
         row-gap: 20px;
         margin-top: -100px;
     }
-
     .footer-menu {
         justify-content: center;
     }
-
     .faq p {
         padding: 35px 10px;
     }
@@ -1950,53 +1935,38 @@ p.ques-content {
     .child_name {
         font-size: 20px;
     }
-
-    .ppn-what-is-card-wrap:before,
-    .ppn-what-is-card-wrap:after {
+    .ppn-what-is-card-wrap:before, .ppn-what-is-card-wrap:after {
         display: none;
     }
-
     .early-years-wrap .text {
         max-width: 70%;
     }
-
-    .monkey-left,
-    .monkey-right {
+    .monkey-left, .monkey-right {
         display: none;
     }
-
     .hero-bottom {
         margin-top: -30px;
     }
-
     .assessment-monkey {
         display: none;
     }
-
     .section-features {
         padding-bottom: 480px;
         background-size: 65%;
         background-position: 100% 100%;
     }
-
     .ability-content {
         flex-direction: column;
     }
-
-    .assessment-components-table-wrap,
-    .components_chart_table {
+    .assessment-components-table-wrap, .components_chart_table {
         overflow-x: scroll;
     }
-
     .section-faq .container {
         margin-top: -30px;
     }
-
-    .faq-highlight:before,
-    .faq-highlight:after {
+    .faq-highlight:before, .faq-highlight:after {
         display: none;
     }
-
     /*#wrapper.toggled #sidebar-wrapper {
         width: 260px;
     }*/
@@ -2012,11 +1982,9 @@ p.ques-content {
     #wrapper.toggled #sidebar-wrapper a.list-group-item i {
         font-size: 18px;
     }
-
     #sidebar-wrapper {
         padding: 10px;
     }
-
     .sidebar-contact {
         width: 100%;
         height: 100%;
@@ -2048,20 +2016,16 @@ p.ques-content {
     .dash-assessment-attention.dash-assessment-attention-missing_shape:before {
         display: none;
     }
-
     .assess-ans-content.assess-attention-ans-wrap {
         flex-direction: column;
         gap: 80px;
     }
-
     .assess-ans-content>.vr {
         display: none;
     }
-
     #page-content-wrapper {
         margin-left: 0;
     }
-
     .toggled #page-content-wrapper {
         margin-left: 0px;
     }
@@ -2069,7 +2033,6 @@ p.ques-content {
     table .ppn-btn-dash.ppn-table-btn span {
         display: none;
     }
-
     .dash-data-wrap {
         padding: 10px;
     }
@@ -2092,6 +2055,9 @@ p.ques-content {
     #sidebarCollapse {
         left: 15px;
     }
+    .dash-assessment-wrap:before {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -2103,30 +2069,39 @@ p.ques-content {
         width: 120px;
     }
 }
-
 @media (max-width: 991px) {
     .mindset-content {
         padding: 0 15px;
     }
-
     .section-features .card {
         flex-direction: column;
     }
-
     .section-features .card figure {
         padding: 60px 0;
     }
 }
-
 @media (min-width: 992px) and (max-width: 1600px) {
     .section-features {
         background-size: 34%;
         background-position: 95% 105%;
     }
 }
-
-@media (max-width: 1400px) and (min-width: 768px) {
+@media (max-width: 1100px) and (min-width: 768px) {
     .dash-assessment-attention.dash-assessment-attention-missing_shape:before {
         background-size: 170px, 200px, 190px, 120px;
     }
+
+    .dash-assessment-auditory-memory.dash-assessment-auditory-memory-auditory_number:before {
+        background-size: 90px, 70px, 100px, 140px;
+    }
+
+    .dash-assessment-visual-memory.dash-assessment-visual-memory-matching_number_cards:before {
+        background-position: top 0px left -20px, top right, bottom -10px left -20px, bottom 0px right -10px;
+        background-size: 160px, 120px, 130px, 140px;
+    }
+
+    .dash-assessment-logical-reasoning.dash-assessment-logical-reasoning-pattern_sequencing:before {
+    background-position: top 0px left, top right, bottom 0px left 0px, bottom 0px right 0px;
+    background-size: 200px, 190px, 90px, 210px;
+}
 }

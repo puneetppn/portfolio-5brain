@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text  active">
+                    <i class="fa-solid fa-border-all"></i> Dashboard
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-users"></i> Students Management
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-map-marker-alt"></i> Areas
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-question-circle"></i> Question Bank
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-file-alt"></i> Exam Section
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-clock"></i> Time Management
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-tags"></i> Coupon Management
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-box"></i> Product Management
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-user"></i> CRM
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="d-flex justify-content-between container-fluid dash-user-section p-2 p-md-4">
+                <button id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="dropdown">
+                    <button class="btn ppn-btn btn-secondary dropdown-toggle ppn-dropdown-dash" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Hi, 5BA Admin</button>
+                    <ul class="dropdown-menu" style="">
+                        <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+                        <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+                        <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid px-4">
+                <div class="d-flex justify-content-between align-items-center dash-title-wrap">
+                    <h2>Assessment Steps and Instructions</h2>
+                </div>
+            </div>
+            <div class="container-fluid px-4">
+                <div class="dash-data-wrap">
+                    <div class="card-body" style="font-size :18px;">
+                        <h6 class="guide-heading" style="font-weight: bold;font-size:22px;"></h6>
+                        <h4 class="guide-heading">Please read the <span class="bluespan">"Guidelines"</span> and the
+                            <span class="greenspan">"Instructions Guidebook"</span> before you take the assessment to
+                            ensure a smooth assessment.
+                        </h4>
+                        <h6 class="m-0 font-weight-bold text-primary" style="padding-top: 15px;padding-bottom: 15px;">
+                            Guidelines</h6>
+                        <p class="guide-content">2. It takes <strong>less than an hour</strong> to complete the
+                            assessment.</p>
+                        <p style="margin-bottom: 4px" class="guide-content">1. 5 Brain Abilities assessment assesses the
+                            5 brain abilities of</p>
+                        <ul class="listli">
+                            <li style="color: RGB(255, 0, 0)">Attention</li>
+                            <li style="color: RGB(255, 192, 0)">Cognitive Visual</li>
+                            <li style="color: RGB(0, 176, 80)">Memory</li>
+                            <li style="color: RGB(46, 116, 181)">Logical Reasoning</li>
+                            <li style="color: RGB(112, 48, 160)">Brain Speed</li>
+                        </ul>
+                        <p style="margin-bottom: 4px" class="guide-content">3. WHAT TO DO BEFORE THE ASSESSMENT</p>
+                        <ul class="listli">
+                            <li>Make sure you have read the <strong><span class="bluespan">Guidelines</span></strong>.
+                            </li>
+                            <li>Read and go through the <strong><span class="greenspan">Instructions
+                                        Guidebook</span></strong> ("download" below) together with the child <b>to
+                                </b>understand the flow of&nbsp;the assessment.</li>
+                            <li>Only begin the assessment when the child is ready.</li>
+                            <li>Make sure all items <strong>(as stated in point 4)</strong> are ready.</li>
+                            <li>Make sure to update the child's&nbsp;current age under "Profile" tabs (on the top right
+                                corner) for returning user.</li>
+                        </ul>
+                        <p style="margin-bottom: 4px" class="guide-content">4. MAKE SURE YOU HAVE</p>
+                        <ul class="listli">
+                            <li>An adult present to provide assistance needed by the child.</li>
+                            <li>A working keyboard and mouse/trackpad.</li>
+                            <li>Speaker at an optimal volume for the child.</li>
+                            <li>A maximum of 1-hour time.</li>
+                            <li>A piece of paper and pencil for working calculations only for&nbsp;<b>Age 10-12 -
+                                    Pattern Sequencing&nbsp;</b>component.</li>
+                            <li>A quiet environment with no noise disruption.</li>
+                            <li>Environment with adequate lighting.</li>
+                            <li>h. Good internet connection and smooth web browser.</li>
+                        </ul>
+                        <p style="margin-bottom: 4px" class="guide-content">5. WHAT YOU DO NOT NEED and SHOULD NOT DO
+                        </p>
+                        <ul class="listli">
+                            <li>Do not take breaks after starting the assessment.</li>
+                            <li>Avoid giving hints or answers to the child.</li>
+                            <li>Do not interfere with the child's answer selection.</li>
+                            <li>Do not write answers on papers or use calculators.</li>
+                            <li>All answers must be typed in or selected from the mouse.</li>
+                        </ul>
+                        <p style="margin-bottom: 4px" class="guide-content">6. WHAT TEST ADMINISTRATOR SHOULD DO</p>
+                        <ul class="listli">
+                            <li>Make sure the child is in their best condition and mood for the assessment.</li>
+                            <li>Set a positive mindset for the child.</li>
+                            <li>Constantly give encouragements to the child to complete all assessment components.</li>
+                            <li>Test administrator may help the child to select or key in answers if they are unable to
+                                use the mouse or keyboard independently.</li>
+                            <li>Do gently remind or pull their attention back to complete the assessment in 1 sitting.
+                            </li>
+                            <li>Give the child their freedom to select answer based on their choice.&nbsp;&nbsp;</li>
+                        </ul>
+                        <a href="http://5brain.org/cms/pdf/Instructions%20Guidebook.pdf"
+                            class="btn btn-success btn-icon-split" target="_blank">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="text">Download the “Instructions Guidebook” here</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-dash mt-auto py-3">
+                <div class="container text-center">
+                    <span class="text-muted">Copyright © Math Monkey (Malaysia) Sdn Bhd 2021. <br>(Registration No:
+                        200501029641)</span>
+                    <div>
+                        <a href="#">Privacy Policy</a> |
+                        <a href="#">Terms &amp; Conditions</a> |
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /#page-content-wrapper -->
+        <div class="overlay" id="overlay"></div>
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        var sidebarCollapse = document.getElementById("sidebarCollapse");
+        var overlay = document.getElementById("overlay");
+        var wrapper = document.getElementById("wrapper");
+
+        sidebarCollapse.addEventListener("click", function () {
+            if (window.innerWidth < 768) {
+                overlay.classList.toggle("active");
+            }
+        });
+
+        overlay.addEventListener("click", function () {
+            wrapper.classList.remove("toggled");
+            overlay.classList.toggle("active");
+        });
+
+        sidebarCollapse.addEventListener("click", function (e) {
+            e.preventDefault();
+            wrapper.classList.toggle("toggled");
+        });
+    </script>
+</body>
+
+</html>
