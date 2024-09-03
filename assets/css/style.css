@@ -14,7 +14,7 @@ body, a, p {
     font-family: var(--body);
 }
 h1, h2, h3, h4, h5, h6 {
-   font-family: var(--heading);
+ font-family: var(--heading);
 }
 
 section {
@@ -1230,7 +1230,7 @@ button.btn-close {
 .location-content-wrap h3 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 34px;
 }
 
 .location-content-wrap p {
@@ -1457,7 +1457,6 @@ button.btn-close {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .btn-danger.ppn-btn-dash i {
@@ -1691,7 +1690,6 @@ p.ques-content {
     -ms-transform: none;
     -ms-transform-origin: none;
     -ms-writing-mode: tb-rl;
-    *writing-mode: tb-rl;
 }
 
 /*.toggle.active:before {
@@ -1893,6 +1891,608 @@ div#memory_board {
     background-position: top 0px left, top right, bottom 0px left 30px, bottom 0px right 0px;
     background-size: 360px, 280px, 170px, 340px;
 }
+
+.question_image span, .question_image span h3, .question_image span h3 strong {
+    font-size: 24px;
+}
+
+.alphbet {
+    display: inline-block;
+    /* margin-left: 20px; */
+}
+
+.alphbet span, .ques_option span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+#allhide .alphbet input[type=checkbox] {
+    visibility: hidden;
+    position: absolute;
+}
+
+#allhide .alphbet input[type=checkbox]+label {
+    cursor: pointer;
+    /* border: 2px solid transparent; */
+    height: 100%;
+}
+
+.alphbet label {
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.alphbet label p {
+    margin: 0;
+}
+
+table#allhide {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.question_image span h3 {
+    margin-bottom: 0px;
+}
+
+#allhide tr td {
+    padding: 20px 10px 10px 10px !IMPORTANT;
+}
+
+input[type=checkbox]:checked+label {
+    /* border: 2px solid #fff; */
+    /* border: 1px solid #fff; */
+    box-shadow: 0 0 3px 5px #EE7A13;
+}
+#allhide img {
+    max-width: 100% !important;
+    height: unset !important;
+}
+
+#allhide input[type="text"], #allhide input[type="number"] {
+    background-color: transparent;
+    border: unset;
+    border-bottom: 2px solid;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 100px;
+}
+
+table#allhide tr td {
+    background-color: transparent !important;
+}
+
+#allhide tr td .input-hidden {
+    border: none;
+    border-bottom: 1px solid #555;
+    color: #555;
+    margin-left: 10px;
+    width: 100px;
+    height: 28px;
+    font-size: 20px;
+    border-radius: 0;
+    position: unset;
+}
+
+#allhide tr td span, #allhide tr td p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+#allhide tr td p {
+    display: inline-block;
+}
+
+.dash-assessment-brain-speed.dash-assessment-brain-speed-quick_math {
+    background-image: url(../../assets/images/Quick-Math-bg.jpg);
+}
+
+.dash-assessment-brain-speed.dash-assessment-brain-speed-quick_math:before {
+    background-image: url(../../assets/images/Quick-Math1.png), url(../../assets/images/Quick-Math2.png), url(../../assets/images/Quick-Math3.png), url(../../assets/images/Quick-Math4.png);
+    background-position: top 30px left, top right, bottom 0px left 30px, bottom 0px right 0px;
+    background-size: 270px, 280px, 170px, 310px;
+}
+
+.dash-cognitive-visual.dash-cognitive-visual-mensa {
+    background-image: url(../../assets/images/mensa-bg.jpg);
+}
+
+.dash-cognitive-visual.dash-cognitive-visual-mensa:before {
+    background-image: url(../../assets/images/mensa1.png), url(../../assets/images/mensa2.png), url(../../assets/images/mensa3.png), url(../../assets/images/mensa4.png);
+    background-position: top left, top 0px right 0px, bottom 10px left 10px, bottom right;
+    background-size: 240px, 370px, 120px, 140px;
+}
+
+.dash-cognitive-visual-mensa .assess-quest-content img {
+    max-width: 650px;
+}
+
+.question_list {
+    text-align: left;
+}
+
+.question_list p strong {
+    font-size: 20px;
+    color: #555;
+    font-weight: bold;
+}
+
+.question_list span {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
+
+.question_list label {
+    margin: 10px;
+    width: 20px;
+}
+
+.question_list label h3 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.question_list label h3 strong {
+    font-weight: normal;
+}
+
+.dash-cognitive-visual.dash-cognitive-visual-shape-search:before {
+    background-image: url(../../assets/images/Shape-Search1.png), url(../../assets/images/Shape-Search2.png), url(../../assets/images/Shape-Search3.png), url(../../assets/images/Shape-Search4.png);
+    background-position: top left, top 0px right 0px, bottom 10px left 10px, bottom right;
+    background-size: 450px, 300px, 200px, 270px;
+}
+
+.dash-cognitive-visual.dash-cognitive-visual-shape-search {
+    background-image: url(../../assets/images/Shape-Search-bg.jpg);
+}
+
+#div1 {
+    /* float: left; */
+    width: auto;
+    /* height: 360px; */
+    background: #6a6a6a00;
+    padding-bottom: 70px;
+}
+#divcode {
+    width: 100%;
+    /* height: 160px; */
+/*    background: #d2c1c1;*/
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 20px 10px;
+gap: 20px;
+flex-wrap: wrap;
+}
+#div11 {
+    float: left;
+    margin: 10px;
+    width: 120px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#imagedriver {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    /* border: 1px solid black; */
+    left: 66px;
+    top: 31px;
+}
+
+#imagedriver img:first-child{
+    position: absolute;
+
+    width: 100px !important;
+    height: 100px !important;
+}
+#imagedriver img:nth-child(2n){
+    position: absolute;
+
+    width: 100px !important;
+    height: 100px !important;
+    
+}
+#imagedriver img:nth-child(2n+1){
+    position: absolute;
+
+    width: 100px !important;
+    height: 100px !important;
+
+
+}
+
+.demo {
+    height: 120px;
+    background-color: #a3a3a3;
+}
+
+.demo1 {
+    /* margin: 10px; */
+    /* margin-top: 25px; */
+    /* margin-left: 125px; */
+    height: 130px;
+    width: 130px;
+    border: 1px solid black;
+}
+
+.demo2 {
+    height: 180px;
+    width: 251px;
+    /* border: 1px solid black; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+    /* margin-top: -19px; */
+    /* margin-left: -12px; */
+}
+
+.wetman {
+    position: relative;
+    /* display: inline-block; */
+    vertical-align: top;
+}
+/*.soft{
+    position: relative;
+    margin-top: -200px;
+    margin-left: 485px;
+}*/
+.dater.clearfix{
+  display: inline-block;
+  position: relative;
+  padding-top: 10px;
+}
+.mime{
+  position: relative;
+  margin-top: -392px;
+  margin-left: 565px;
+}
+.mime1{
+ position: relative;
+ margin-top: -300px;
+ margin-right: 10px;
+}
+.level{
+  font-size: 20px;
+  background-color: gray;
+  color: white;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+    #div1 {
+        height:100%!important;
+        text-align: center!important;
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .x_title h2, .timer{
+        font-size: 17px;
+    }
+    .demo1{
+        margin-left: 0;
+    }
+    .soft{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .demo2{
+        width: 215px;
+    }
+    .mime1{
+        margin-top: -205px;
+    }
+    .mime {
+        margin-top: -212px;
+        margin-left: 90px;
+    }
+    .x_content{
+        padding: 0;
+    }
+    .x_content .col-md-12.col-sm-12.col-xs-12{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .timer{
+        margin-top: 25px;
+    }
+    .demo2 {
+        width: 166px;
+        height: 140px;
+        margin-top: 0;
+    }
+    .x_title h2{
+        font-size: 18px;
+    }
+}
+
+.dater.clearfix .center {
+    display: block;
+    margin-right: auto;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    bottom: -14px;
+    left: 50%;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.dash-assessment-logical-reasoning-color_fun .assess-quest-content {
+    text-align: left;
+}
+
+.dash-assessment-logical-reasoning.dash-assessment-logical-reasoning-color_fun {
+    background-image: url(../../assets/images/Color-Fun-bg.jpg);
+}
+
+.dash-assessment-logical-reasoning.dash-assessment-logical-reasoning-color_fun:before {
+    background-image: url(../../assets/images/Color-Fun1.png), url(../../assets/images/Color-Fun2.png), url(../../assets/images/Color-Fun3.png), url(../../assets/images/Color-Fun4.png);
+    background-position: top 0px left 10px, top 10px right, bottom -10px left -10px, bottom -10px right 0px;
+    background-size: 380px, 210px, 210px, 360px;
+}
+
+#allhide tr td span h1 {
+    font-size: 20px !important;
+    color: #555 !important;
+    font-weight: 700 !important;
+}
+
+#allhide tr td span h2, #allhide tr td span p {
+    font-size: 18px !important;
+    color: #555 !important;
+    font-weight: 600 !important;
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+.dash-assessment-brain-speed.dash-assessment-brain-speed-counting {
+    background-image: url(../../assets/images/counting-bg.jpg);
+}
+
+.dash-assessment-brain-speed.dash-assessment-brain-speed-counting:before {
+    background-image: url(../../assets/images/Counting1.png), url(../../assets/images/Counting2.png), url(../../assets/images/Counting3.png), url(../../assets/images/Counting4.png);
+    background-position: top 0px left, top 10px right, bottom 0px left 10px, bottom 0px right 0px;
+    background-size: 250px, 240px, 150px, 360px;
+}
+
+.all-assess .dash-data-wrap {
+    background: url(../../assets/images/all-assess-bg.jpg) no-repeat center 90%;
+    position: relative;
+    z-index: 1;
+}
+
+.all-assess .dash-data-wrap:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 20%;
+    z-index: -1;
+}
+
+.wizard-progress {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .wizard-progress .step.complete .node {
+            border: 2px solid #fff;
+            background-color: #6A503C;
+        }
+
+        .wizard-progress .step.complete .node:before {
+            font-family: FontAwesome;
+            content: "\f00c";
+            position: absolute;
+            left: 5px;
+            top: 2px;
+            font-size: 13px;
+        }
+
+        .wizard-progress .step {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .wizard-progress .step.complete:before {
+            background-color: #6A503C;
+        }
+
+        .wizard-progress .step:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 5px;
+            background-color: #fff;
+            height: 6px;
+            width: 100%;
+            z-index: 0;
+        }
+
+        .wizard-progress .step .node {
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 6px solid #6A503C;
+            background-color: #fff;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .wizard-progress .step img {
+            max-width: 200px;
+            width: 100%;
+        }
+
+        .wizard-progress .step:last-child:before {
+            display: none;
+        }
+
+        .all-assess .dash-title-wrap {
+            border-bottom: 2px solid #fff;
+            padding-top: 5px;
+            margin-bottom: 30px;
+        }
+
+        .assess-cat-wrap .checkbox-group {
+           display: inline-block;
+           
+           /* hide checkbox */
+       }
+       .assess-cat-wrap .checkbox-group label {
+           cursor: pointer;
+           display: inline-block;
+           color: #000000;
+           font-size: 1rem;
+       }
+       .assess-cat-wrap .checkbox-group label:before {
+           cursor: pointer;
+           content: '✓';
+           border: solid;
+           border-radius: 50%;
+           width: 20px;
+           height: 20px;
+           margin-right: 0.5rem;
+           display: inline-block;
+           border: 1px solid #000000;
+           color: white;
+           background-color: white;
+           padding: 0 0.2em;
+           line-height: 1.3;
+       }
+       .assess-cat-wrap .checkbox-group .rounded-checkbox:checked + label {
+           font-weight: bold;
+       }
+       .assess-cat-wrap .checkbox-group .rounded-checkbox:checked + label:before {
+           content: '✓';
+           color: #999;
+       }
+       .assess-cat-wrap .checkbox-group .rounded-checkbox {
+           position: fixed;
+           left: -9999px;
+       }
+       .assess-cat-wrap .checkbox-group:hover label {
+           color: #333;
+       }
+       .assess-cat-wrap .checkbox-group2 {
+           display: inline-block;
+           margin-right: 1rem;
+           /* hide checkbox */
+       }
+       .assess-cat-wrap .checkbox-group2 label {
+           cursor: pointer;
+           display: inline-block;
+           color: #999;
+           font-size: 11px;
+       }
+       .assess-cat-wrap .checkbox-group2 label:before {
+           content: '';
+           background: #f5f5f5;
+           border-radius: 100%;
+           border: 1px solid #b5b5b5;
+           display: inline-block;
+           width: 0.9rem;
+           height: 0.9rem;
+           position: relative;
+           top: 0.1em;
+           margin-right: 0.4rem;
+           vertical-align: top;
+           cursor: pointer;
+           text-align: center;
+           -webkit-transition: all 250ms ease;
+           transition: all 250ms ease;
+       }
+       .assess-cat-wrap .checkbox-group2 .rounded-checkbox2:checked + label {
+           font-weight: bold;
+           position: relative;
+       }
+       .assess-cat-wrap .checkbox-group2 .rounded-checkbox2:checked + label:before {
+           background-color: #211e2b;
+           -webkit-box-shadow: inset 0 0 0 3px #f5f5f5;
+           box-shadow: inset 0 0 0 3px #f5f5f5;
+       }
+       .assess-cat-wrap .checkbox-group2 .rounded-checkbox2 {
+           position: fixed;
+           left: -9999px;
+       }
+       .assess-cat-wrap .checkbox-group2:hover label {
+           color: #333;
+       }
+       
+       .assess-cat-wrap .btn img {
+        max-width: 60px;
+        display: block;
+        margin: auto;
+    }
+
+    .assess-cat-wrap .btn {
+        padding: 15px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .assess-cat-wrap ul {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 991px) {
+        .wizard-progress {
+            flex-direction: column;
+        }
+
+        .wizard-progress .step {
+            /* padding-bottom: 50px; */
+        }
+
+        .wizard-progress .step:before {
+            height: 100%;
+            width: 6px;
+            left: 0;
+            bottom: unset;
+            top: 50%;
+            transform: translate(-50%, 0%);
+        }
+
+        .wizard-progress .step .node {
+            left: 0;
+            top: 50%;
+        }
+
+        .wizard-progress .step img {
+            max-width: 150px;
+            width: 100%;
+        }
+    }
+
 
 /*media queries*/
 @media (max-width: 576px) {
@@ -2101,7 +2701,25 @@ div#memory_board {
     }
 
     .dash-assessment-logical-reasoning.dash-assessment-logical-reasoning-pattern_sequencing:before {
-    background-position: top 0px left, top right, bottom 0px left 0px, bottom 0px right 0px;
-    background-size: 200px, 190px, 90px, 210px;
-}
+        background-position: top 0px left, top right, bottom 0px left 0px, bottom 0px right 0px;
+        background-size: 200px, 190px, 90px, 210px;
+    }
+
+    .dash-assessment-brain-speed.dash-assessment-brain-speed-quick_math:before {
+        background-position: top 0px left, top right, bottom 0px left 0px, bottom 0px right 0px;
+        background-size: 140px, 190px, 90px, 180px;
+    }
+
+    .dash-cognitive-visual.dash-cognitive-visual-shape-search:before {
+        background-position: top left, top 0px right 0px, bottom 10px left 10px, bottom right;
+        background-size: 240px, 200px, 120px, 130px;
+    }
+    .dash-assessment-logical-reasoning.dash-assessment-logical-reasoning-color_fun:before {
+        background-position: top 0px left -20px, top -10px right, bottom -10px left -10px, bottom -10px right -20px;
+        background-size: 250px, 110px, 130px, 260px;
+    }
+    .dash-assessment-brain-speed.dash-assessment-brain-speed-counting:before {
+        background-position: top 0px left, top 10px right, bottom 0px left 10px, bottom 0px right 0px;
+        background-size: 140px, 160px, 80px, 220px;
+    }
 }
