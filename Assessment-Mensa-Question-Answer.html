@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Admin Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,72 +54,76 @@
                 </ul>
             </div>
         </div>
-            
-            
-            <div class="container-fluid p-0 dash-data-wrap dash-assessment">
-                <div class="dash-assessment-wrap dash-cognitive-visual dash-cognitive-visual-colour_different text-center">
-                    <div class="assess-ques-info-wrap">
-                        <span class="assess-ques-info">Colour Different</span>
-                        - Age
-                        <span class="assess-ques-age">7</span>
+        
+        
+        <div class="container-fluid p-0 dash-data-wrap dash-assessment">
+            <div class="dash-assessment-wrap dash-cognitive-visual dash-cognitive-visual-mensa text-center">
+                <div class="assess-ques-info-wrap">
+                    <span class="assess-ques-info">Mensa</span>
+                    - Age
+                    <span class="assess-ques-age">12</span>
+                </div>
+                
+                <div class="assess-ques-number-wrap">Question
+                    <span class="assess-curr-ques">1</span> / <span class="assess-total-ques">10</span>
+                </div>
+                <div class="assess-quest-wrap">
+                    <h3>Which larger shape would be made if the two section are fitted together?</h3>
+                    <div class="assess-quest-content">
+                        <img class="assess-quest-img img-fluid" src="assets/images/Mensa-ques1.png">  
                     </div>
-                    
-                    <div class="assess-ques-number-wrap">Question
-                        <span class="assess-curr-ques">6</span> / <span class="assess-total-ques">10</span>
-                    </div>
-                    <div class="assess-quest-wrap">
-                        <div class="assess-ans-content  colour-different-ans-wrap">
+                    <div class="assess-ans-content">
                             <div class="assess-ans">
-                                <h3>1) Which color was not there before?</h3>
+                                <h3>Which is the missing shape?</h3>
                                 <div class="attention-options">
                                     <div class="assess-option">
                                         <input type="radio" sn="1" value="1" id="radio1_501" name="50" class="input-hidden">
-                                        <label for="radio1_501"><img class="assess-ans-img img-fluid" src="assets/images/Colour-Different-ques1-1.png"></label>
+                                        <label for="radio1_501"><img class="assess-ans-img img-fluid" src="assets/images/mensa-ans1.png"></label>
                                         <span>A)</span>
                                     </div>
                                     <div class="assess-option">
                                         <input type="radio" sn="1" value="1" id="radio1_502" name="50" class="input-hidden">
-                                        <label for="radio1_502"><img class="assess-ans-img img-fluid" src="assets/images/Colour-Different-ques1-2.png"></label>
+                                        <label for="radio1_502"><img class="assess-ans-img img-fluid" src="assets/images/mensa-ans2.png"></label>
                                         <span>B)</span>
                                     </div>
                                     <div class="assess-option">
                                         <input type="radio" sn="1" value="1" id="radio1_503" name="50" class="input-hidden">
-                                        <label for="radio1_503"><img class="assess-ans-img img-fluid" src="assets/images/Colour-Different-ques1-3.png"></label>
+                                        <label for="radio1_503"><img class="assess-ans-img img-fluid" src="assets/images/mensa-ans3.png"></label>
                                         <span>C)</span>
                                     </div>
                                     <div class="assess-option">
                                         <input type="radio" sn="1" value="1" id="radio1_504" name="50" class="input-hidden">
-                                        <label for="radio1_504"><img class="assess-ans-img img-fluid" src="assets/images/Colour-Different-ques1-4.png"></label>
+                                        <label for="radio1_504"><img class="assess-ans-img img-fluid" src="assets/images/mensa-ans4.png"></label>
                                         <span>D)</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <button class="btn ppn-btn">Next</button>
-                    </div>
+                </div>
+                <div>
+                    <button class="btn ppn-btn">Next</button>
                 </div>
             </div>
-
-            <footer class="footer-dash mt-auto py-3">
-                <div class="container text-center">
-                    <span class="text-muted">Copyright © Math Monkey (Malaysia) Sdn Bhd 2021. <br>(Registration No: 200501029641)</span>
-                    <div>
-                        <a href="#">Privacy Policy</a> |
-                        <a href="#">Terms &amp; Conditions</a> |
-                        <a href="#">Cookie Policy</a>
-                    </div>
-                </div>
-            </footer>
         </div>
-        <!-- /#page-content-wrapper -->
-                <div class="overlay" id="overlay"></div>
-    </div>
-    <!-- /#wrapper -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <footer class="footer-dash mt-auto py-3">
+            <div class="container text-center">
+                <span class="text-muted">Copyright © Math Monkey (Malaysia) Sdn Bhd 2021. <br>(Registration No: 200501029641)</span>
+                <div>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms &amp; Conditions</a> |
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <div class="overlay" id="overlay"></div>
+</div>
+<!-- /#wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script>
     var sidebarCollapse = document.getElementById("sidebarCollapse");
     var overlay = document.getElementById("overlay");

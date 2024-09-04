@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard-user.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fa-solid fa-border-all"></i> Dashboard
+                </a>
+                <a href="Assessment-all-assessments.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fas fa-users"></i>Assessment
+                </a>
+                <a href="dashboard-reporting.html" class="list-group-item list-group-item-action bg-transparent second-text active">
+                    <i class="fas fa-chart-area"></i>Reporting
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="d-flex gap-2 flex-wrap justify-content-between container-fluid dash-user-section p-2 p-md-4">
+                <div class="d-flex align-items-center justify-content-start gap-2"><button id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2 class="child_name">Assessment Child : <span style="color:black;">Man</span></h2>
+            </div>
+            <div class="dropdown">
+                <button class="btn ppn-btn btn-secondary dropdown-toggle ppn-dropdown-dash" type="button" data-bs-toggle="dropdown" aria-expanded="false">Hi, 5BA Admin</button>
+                <ul class="dropdown-menu" style="">
+                    <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+                    <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+                    <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid px-2 px-md-4">
+            <div class="row justify-content-between align-items-center dash-title-wrap g-2">
+                <div class="col-12 col-md-auto mb-3 mb-md-0">
+                    <h2>Logical Reasoning Result
+                    </h2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-fluid px-2 px-md-4">
+            <div class="dash-data-wrap">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pattern Sequencing Result - Age 12</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="x_content">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                                <h2></h2><h3>1) </strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing 10 12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-1.png" style="height:55px; width:500px"></h3>
+                                                <h3 style="color:green">Correct Answer: <p><strong></strong></p><p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing 10 12 age-2" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-pattern_seqencing_q1_a.png" style="height:55px; width:55px"></strong></p><strong>
+                                                </strong><p></p>
+                                            </h3>
+                                            <h3 style="color:blue">Your Answer: <p><strong></strong></p>
+                                            </h3>
+                                        </div>
+                                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                            <h2></h2><h3>2) </strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing Circle 10 12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-2.png" style="height:79px; width:485px"></h3>
+                                            <h3 style="color:green">Correct Answer: <p><strong></strong></p><p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing Circle 10 12 age-4" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-Q2_a3.png" style="height:75px; width:75px"></strong></p><strong>
+                                            </strong><p></p>
+                                        </h3>
+                                        <h3 style="color:blue">Your Answer: <p><strong></strong></p>
+                                        </h3>
+                                    </div>
+                                    <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                        <h2></h2><h3>3) </strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing Green Circle 10 12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-3.png" style="height:64px; width:500px"></h3>
+                                        <h3 style="color:green">Correct Answer: <p><strong></strong></p><p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing Green Circle 10 12 age-4" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-pattern_sequencing_c.png" style="height:51px; width:50px"></strong></p><strong>
+                                        </strong><p></p>
+                                    </h3>
+                                    <h3 style="color:blue">Your Answer: <p><strong></strong></p>
+                                    </h3>
+                                </div>
+                                <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                    <h2></h2><h3>4) </strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing purple 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-4.png" style="height:104px; width:400px"></h3>
+                                    <h3 style="color:green">Correct Answer: <p><strong></strong></p><p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing purple square 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-pattern_sequencing_Q4_b.png" style="height:75px; width:75px"></strong></p><strong>
+                                    </strong><p></p>
+                                </h3>
+                                <h3 style="color:blue">Your Answer: <p><strong></strong></p>
+                                </h3>
+                            </div>
+                            <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                <h2></h2><h3>5) </strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing blue 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-5.png" style="height:100px; width:400px"></h3>
+                                <h3 style="color:green">Correct Answer: <p><strong></strong></p><p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing blue square line 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-pattern_sequencing_Q5_d.png" style="height:75px; width:75px"></strong></p><strong>
+                                </strong><p></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong></strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>6) Pick the number that most reasonably comes next in the following series:</strong><br>
+                                &nbsp; &nbsp; &nbsp;<img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in black 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-6(2).png" style="height:35px; width:400px"></h3>
+                                <h3 style="color:green">Correct Answer: <p><strong></strong></p><p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in black 75 4 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-6-3.png" style="height:19px; width:53px"></strong></p><strong>
+                                </strong><p></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong></strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>7) Use A, B, and C to find the number pattern. What is the missing number?</h3>
+                            
+                            <p><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers and alphabet square in black 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-7.png" style="height:260px; width:200px"></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>132</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>8) Fill in the missing numbers.</h3>
+                            
+                            <p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in colors and black 10-12 age-" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-8.png" style="height:293px; width:250px"></strong></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>12</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>9) Fill in the missing numbers.</h3>
+                            
+                            <p><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing pyramid numbers in black 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-Q9.png" style="height:361px; width:350px"></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>227</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>10) Use the number 1 to 6 once to fill in A, B C and D, so that each side of the triangle has a sum of 9. Key in your answers.</h3>
+                            
+                            <p><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in circle and triangle black 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-10.png" style="height:173px; width:200px"></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>5</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>11) Look at the picture below and find the numbers that belong in each shape.</h3>
+                            
+                            <p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing Stars and Suns 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-Q11(1).png" style="height:388px; width:500px"></strong></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>24</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>12) For Question 12 to 14, Letters A, B and C represent an unknown number. Each row will add up to the number on the right and each column will add up to the number on the bottom. Find A.</h3>
+                            
+                            <p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in squares black 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/pattern_sequencing_age10-12.png" style="height:105px; width:150px"></strong></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>10</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>13) For Question 12 to 14, Letters A, B and C represent an unknown number. Each row will add up to the number on the right and each column will add up to the number on the bottom. Find B.</h3>
+                            
+                            <p><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in squares black 10-12 age-2" src="http://5brain.org/admin/questionbank/photos/images/pattern_sequencing_age10-12.png" style="height:105px; width:150px"></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>5</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>14) For Question 12 to 14, Letters A, B and C represent an unknown number. Each row will add up to the number on the right and each column will add up to the number on the bottom. Find C.</h3>
+                            
+                            <p><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in squares black 10-12 age-5c" src="http://5brain.org/admin/questionbank/photos/images/pattern_sequencing_age10-12.png" style="height:105px; width:150px"></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>4</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>15) The numbers in the square at left, below, have been placed following a certain mathematical rule. If the numbers in the square at right were placed following the same rule, What is the missing number?</h3>
+                            
+                            <p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in two squares black 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-15(1).png" style="height:250px; width:500px"></strong></p>
+                            <h3 style="color:green">Correct Answer: <p><strong>24</strong></p>
+                            </h3>
+                            <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                            </h3>
+                        </div>
+                        <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                            <h2></h2><h3>16) Following the pattern is shown in the number sequence below, what is the missing number?<br>
+                                &nbsp; &nbsp; &nbsp; &nbsp;<img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in black 10-12 age-149" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-16(4).png" style="height:35px; width:400px"></h3>
+                                <h3 style="color:green">Correct Answer: <p><strong>16</strong></p>
+                                </h3>
+                                <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                                </h3>
+                            </div>
+                            <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                <h2></h2><h3>17)&nbsp;Which is the missing number?</strong><br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp;<img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in black 10-12 age-121" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-17(2).png" style="height:35px; width:400px"></h3>
+                                    <h3 style="color:green">Correct Answer: <p><strong>15</strong></p>
+                                    </h3>
+                                    <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                                    </h3>
+                                </div>
+                                <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                    <h2></h2><h3>18)&nbsp;Fill in the missing number?<br>
+                                        &nbsp; &nbsp; &nbsp; &nbsp;<img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers in black 10-12 age-111" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-18(3).png" style="height:35px; width:400px"></h3>
+                                        <h3 style="color:green">Correct Answer: <p><strong>21</strong></p>
+                                        </h3>
+                                        <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                                        </h3>
+                                    </div>
+                                    <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                        <h2></h2><h3>19) Look at the picture below and find numbers that belong in each shape. Place the smallest number in A and the biggest number in C.</h3>
+                                        
+                                        <p><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing shapes  in black 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/pattern_sequencing_age10-12_q19.png" style="height:176px; width:500px"></p>
+                                        <h3 style="color:green">Correct Answer: <p><strong>1</strong></p>
+                                        </h3>
+                                        <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                                        </h3>
+                                    </div>
+                                    <div class="table-responsive" style="border-bottom: 1px solid gray;padding-top:12px;">
+                                        <h2></h2><h3>20) In the star pattern, all lines of numbers have the same total of 32, and no numbers can be used more than once. Fill in the empty circles with the correct numbers.</h3>
+                                        
+                                        <p><strong><img alt="5Brain Singapore Malasiya Logical Reasoning Pattern Sequencing numbers of triangles in black 10-12 age-1" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malasiya-logical-reasoning-pattern-sequencing-10-12-age-20.png" style="height:250px; width:250px"></strong></p>
+                                        <h3 style="color:green">Correct Answer: <p><strong>14</strong></p>
+                                        </h3>
+                                        <h3 style="color:blue">Your Answer: <p><strong>0</strong></p>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-dash mt-auto py-3">
+    <div class="container text-center">
+        <span class="text-muted">Copyright © Math Monkey (Malaysia) Sdn Bhd 2021. <br>(Registration No:
+            200501029641)</span>
+            <div>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms &amp; Conditions</a> |
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- /#page-content-wrapper -->
+<div class="modal fade" id="addStudentModal" tabindex="-1" aria-labelledby="addStudentModal" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addStudentModal">Add New Student</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="sign-up-modal sign-auth modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="inputParentsFirstName">Parent's First Name</label>
+                            <input type="text" class="form-control" id="inputParentsFirstName" placeholder="John" required="">
+                        </div>
+                        <div class="col">
+                            <label for="inputParentsLastName">Parent's Last Name</label>
+                            <input type="text" class="form-control" id="inputParentsLastName" placeholder="Doe" required="">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="johndoe@example.com" required="">
+                        </div>
+                        <div class="col">
+                            <label for="inputCountry">Country</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><img src="flag.png" alt="Country Flag" width="20"></span>
+                                </div>
+                                <select id="inputCountry" required="" class="form-select">
+                                    <option value="Malaysia">Malaysia</option>
+                                    <!-- Add other country options here -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="inputPhoneNumber">Phone Number</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="dropdown" id="country-codes">
+                                        <span class="input-group-text">
+                                            <span class="value">+91</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <input type="text" id="inputPhoneNumber" class="form-control" placeholder="Phone Number" required="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="inputUsername">Username</label>
+                            <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                        </div>
+                        <div class="col">
+                            <label for="inputSelectUser">Select User</label>
+                            <div class="input-group">
+                                
+                                <select id="inputSelectUser" required="" class="form-select">
+                                    <option value="Student">Student</option>
+                                    <!-- Add other country options here -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex action-btn-group">
+                        <button type="submit" class="btn btn-confirm">Add Student</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlay" id="overlay"></div>
+</div>
+<!-- /#wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+    var sidebarCollapse = document.getElementById("sidebarCollapse");
+    var overlay = document.getElementById("overlay");
+    var wrapper = document.getElementById("wrapper");
+    
+    sidebarCollapse.addEventListener("click", function () {
+        if (window.innerWidth < 768) {
+            overlay.classList.toggle("active");
+        }
+    });
+    
+    overlay.addEventListener("click", function () {
+        wrapper.classList.remove("toggled");
+        overlay.classList.toggle("active");
+    });
+    
+    sidebarCollapse.addEventListener("click", function (e) {
+        e.preventDefault();
+        wrapper.classList.toggle("toggled");
+    });
+</script>
+
+
+
+</body>
+
+</html>

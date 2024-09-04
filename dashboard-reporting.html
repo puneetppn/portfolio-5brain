@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard-user.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fa-solid fa-border-all"></i> Dashboard
+                </a>
+                <a href="Assessment-all-assessments.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fas fa-users"></i>Assessment
+                </a>
+                <a href="dashboard-reporting.html" class="list-group-item list-group-item-action bg-transparent second-text active">
+                    <i class="fas fa-chart-area"></i>Reporting
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="d-flex gap-2 flex-wrap justify-content-between container-fluid dash-user-section p-2 p-md-4">
+                <div class="d-flex align-items-center justify-content-start gap-2"><button id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2 class="child_name">Assessment Child : <span style="color:black;">Man</span></h2>
+            </div>
+            <div class="dropdown">
+                <button class="btn ppn-btn btn-secondary dropdown-toggle ppn-dropdown-dash" type="button" data-bs-toggle="dropdown" aria-expanded="false">Hi, 5BA Admin</button>
+                <ul class="dropdown-menu" style="">
+                    <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+                    <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+                    <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid px-2 px-md-4">
+            <div class="row justify-content-between align-items-center dash-title-wrap g-2">
+                <div class="col-12 col-md-auto mb-3 mb-md-0">
+                    <h2>Logical Reasoning Result
+                    </h2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-fluid px-2 px-md-4">
+            <div class="dash-data-wrap">
+                
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pattern Sequencing Result - Age 12</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="x_content">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="table-responsive">
+                                                <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap reporting-table" cellspacing="0">
+                                                    <tbody><tr>
+                                                        <th colspan="2" class="getdesign">Pattern Sequencing<span class="getdesign1 ml-4">Date: 30/08/2024</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="color: #000;">Total Number of Questions</th>
+                                                        <td style="color: #000;">20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="color: green;">Total Correct Answers</th>
+                                                        <td style="color: green; ">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="color: #ff4646;">Total Wrong Answers</th>
+                                                        <td style="color: red; ">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Total Unanswered Questions</th>
+                                                        <td style="color: brown;">20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="color: #344bffd9;">Logical Reasoning: Pattern Sequencing Results (Strong/Moderate/Weak)</th>
+                                                        <td style="color: #0320ffd9;">Weak</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>View All Answers: </th>
+                                                        <td style="color: #0320ffd9;"><a href="dashboard-reporting-view-answer.html">View Answers</a></td>
+                                                    </tr>
+                                                </tbody></table>
+                                            </div>
+                                                
+                                    <div class="table-responsive">
+                                                <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap reporting-table" cellspacing="0">
+                                                    <tbody><tr>
+                                                        <th colspan="2" class="getdesign">Pattern Sequencing<span class="getdesign1 ml-4">Date: 30/08/2024</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="color: #000;">Total Number of Questions</th>
+                                                        <td style="color: #000;">20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="color: green;">Total Correct Answers</th>
+                                                        <td style="color: green; ">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="color: #ff4646;">Total Wrong Answers</th>
+                                                        <td style="color: red; ">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Total Unanswered Questions</th>
+                                                        <td style="color: brown;">20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="color: #344bffd9;">Logical Reasoning: Pattern Sequencing Results (Strong/Moderate/Weak)</th>
+                                                        <td style="color: #0320ffd9;">Weak</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>View All Answers: </th>
+                                                        <td style="color: #0320ffd9;"><a href="dashboard-reporting-view-answer.html">View Answers</a></td>
+                                                    </tr>
+                                                </tbody></table>
+                                            </div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer-dash mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">Copyright © Math Monkey (Malaysia) Sdn Bhd 2021. <br>(Registration No:
+                200501029641)</span>
+                <div>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms &amp; Conditions</a> |
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <div class="modal fade" id="addStudentModal" tabindex="-1" aria-labelledby="addStudentModal" aria-modal="true" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addStudentModal">Add New Student</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="sign-up-modal sign-auth modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="inputParentsFirstName">Parent's First Name</label>
+                                <input type="text" class="form-control" id="inputParentsFirstName" placeholder="John" required="">
+                            </div>
+                            <div class="col">
+                                <label for="inputParentsLastName">Parent's Last Name</label>
+                                <input type="text" class="form-control" id="inputParentsLastName" placeholder="Doe" required="">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" id="inputEmail" class="form-control" placeholder="johndoe@example.com" required="">
+                            </div>
+                            <div class="col">
+                                <label for="inputCountry">Country</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><img src="flag.png" alt="Country Flag" width="20"></span>
+                                    </div>
+                                    <select id="inputCountry" required="" class="form-select">
+                                        <option value="Malaysia">Malaysia</option>
+                                        <!-- Add other country options here -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="inputPhoneNumber">Phone Number</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="dropdown" id="country-codes">
+                                            <span class="input-group-text">
+                                                <span class="value">+91</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <input type="text" id="inputPhoneNumber" class="form-control" placeholder="Phone Number" required="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="inputUsername">Username</label>
+                                <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                            </div>
+                            <div class="col">
+                                <label for="inputSelectUser">Select User</label>
+                                <div class="input-group">
+                                    
+                                    <select id="inputSelectUser" required="" class="form-select">
+                                        <option value="Student">Student</option>
+                                        <!-- Add other country options here -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex action-btn-group">
+                            <button type="submit" class="btn btn-confirm">Add Student</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+</div>
+<!-- /#wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+    var sidebarCollapse = document.getElementById("sidebarCollapse");
+    var overlay = document.getElementById("overlay");
+    var wrapper = document.getElementById("wrapper");
+    
+    sidebarCollapse.addEventListener("click", function () {
+        if (window.innerWidth < 768) {
+            overlay.classList.toggle("active");
+        }
+    });
+    
+    overlay.addEventListener("click", function () {
+        wrapper.classList.remove("toggled");
+        overlay.classList.toggle("active");
+    });
+    
+    sidebarCollapse.addEventListener("click", function (e) {
+        e.preventDefault();
+        wrapper.classList.toggle("toggled");
+    });
+</script>
+
+
+
+</body>
+
+</html>

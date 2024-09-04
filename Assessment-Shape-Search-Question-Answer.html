@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard-user.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fa-solid fa-border-all"></i> Dashboard
+                </a>
+                <a href="Assessment-all-assessments.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text active">
+                    <i class="fas fa-users"></i>Assessment
+                </a>
+                <a href="dashboard-table.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-chart-area"></i>Reporting
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="d-flex gap-2 flex-wrap justify-content-between container-fluid dash-user-section p-2 p-md-4">
+                <div class="d-flex align-items-center justify-content-start gap-2"><button id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2 class="child_name">Assessment Child : <span style="color:black;">Man</span></h2>
+            </div>
+            <div class="dropdown">
+                <button class="btn ppn-btn btn-secondary dropdown-toggle ppn-dropdown-dash" type="button" data-bs-toggle="dropdown" aria-expanded="false">Hi, 5BA Admin</button>
+                <ul class="dropdown-menu" style="">
+                    <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+                    <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+                    <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="container-fluid p-0 dash-data-wrap dash-assessment">
+            <div class="dash-assessment-wrap dash-cognitive-visual dash-cognitive-visual-shape-search text-center">
+                <div class="assess-ques-info-wrap">
+                    <span class="assess-ques-info">Shape Search</span>
+                    - Age
+                    <span class="assess-ques-age">7</span>
+                </div>
+                
+                <div class="assess-ques-number-wrap">Question
+                    <span class="assess-curr-ques">1</span> / <span class="assess-total-ques">10</span>
+                </div>
+                <div class="assess-quest-wrap">
+                    <h3>Answer the question about shapes shown in the box.
+                    </h3>
+                    <div class="assess-quest-content">
+                        <img class="assess-quest-img img-fluid" src="assets/images/shape-search-question.png">  
+                    </div>
+                    <div class="assess-ans-content">
+                        <div class="assess-ans">
+                            
+                            <h3>Which is the missing shape?</h3><div class="attention-options">
+                                
+                                
+                                
+                                <div class="question_list">
+                                  
+                                  <div id="question1">
+                                    <p><strong>1) How many squares are inside circles?</strong></p>
+                                    <span class="textclass">A) </span>
+                                    <input type="checkbox" sn="1" value="1" id="radio1_51" name="5" class="input-hidden">
+                                    <label for="radio1_51"><h3><strong>4</strong></h3>
+                                    </label>
+
+                                    <span class="textclass">B) </span>
+                                    <input type="checkbox" sn="2" value="2" id="radio1_52" name="5" class="input-hidden">
+                                    <label for="radio1_52"><h3><strong>5</strong></h3>
+                                    </label>
+
+                                    <span class="textclass">C) </span>
+                                    <input type="checkbox" sn="3" value="3" id="radio1_53" name="5" class="input-hidden">
+                                    <label for="radio1_53"><h3><strong>6</strong></h3>
+                                    </label>
+
+                                    <span class="textclass">D) </span>
+                                    <input type="checkbox" sn="4" value="4" id="radio1_54" name="5" class="input-hidden">
+                                    <label for="radio1_54"><h3><strong>7</strong></h3>
+                                    </label>
+                                </div>
+
+                                <hr>
+                                <div id="question2">
+                                  <p><strong>2) How many squares are not inside circles?</strong></p>
+                                  <span class="textclass">A) </span>
+                                  <input type="checkbox" sn="1" value="1" id="radio1_61" name="6" class="input-hidden">
+                                  <label for="radio1_61"><h3><strong>1</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">B) </span>
+                                  <input type="checkbox" sn="2" value="2" id="radio1_62" name="6" class="input-hidden">
+                                  <label for="radio1_62"><h3><strong>2</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">C) </span>
+                                  <input type="checkbox" sn="3" value="3" id="radio1_63" name="6" class="input-hidden">
+                                  <label for="radio1_63"><h3><strong>3</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">D) </span>
+                                  <input type="checkbox" sn="4" value="4" id="radio1_64" name="6" class="input-hidden">
+                                  <label for="radio1_64"><h3><strong>4</strong></h3>
+                                  </label>
+                              </div>
+                              <hr>
+                              <div id="question3">
+                                  <p><strong>3) How many squares are there?</strong></p>
+                                  <span class="textclass">A) </span>
+                                  <input type="checkbox" sn="1" value="1" id="radio1_71" name="7" class="input-hidden">
+                                  <label for="radio1_71"><h3><strong>8</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">B) </span>
+                                  <input type="checkbox" sn="2" value="2" id="radio1_72" name="7" class="input-hidden">
+                                  <label for="radio1_72"><h3><strong>10</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">C) </span>
+                                  <input type="checkbox" sn="3" value="3" id="radio1_73" name="7" class="input-hidden">
+                                  <label for="radio1_73"><h3><strong>12</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">D) </span>
+                                  <input type="checkbox" sn="4" value="4" id="radio1_74" name="7" class="input-hidden">
+                                  <label for="radio1_74"><h3><strong>14</strong></h3>
+                                  </label>
+                              </div>
+                              <hr>
+                              <div id="question4">
+                                  <p><strong>4) How many octagons there?</strong></p>
+                                  <span class="textclass">A) </span>
+                                  <input type="checkbox" sn="1" value="1" id="radio1_81" name="8" class="input-hidden">
+                                  <label for="radio1_81"><h3><strong>1</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">B) </span>
+                                  <input type="checkbox" sn="2" value="2" id="radio1_82" name="8" class="input-hidden">
+                                  <label for="radio1_82"><h3><strong>2</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">C) </span>
+                                  <input type="checkbox" sn="3" value="3" id="radio1_83" name="8" class="input-hidden">
+                                  <label for="radio1_83"><h3><strong>3</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">D) </span>
+                                  <input type="checkbox" sn="4" value="4" id="radio1_84" name="8" class="input-hidden">
+                                  <label for="radio1_84"><h3><strong>4</strong></h3>
+                                  </label>
+                              </div>
+                              <hr>
+                              <div id="question5">
+                                  <p><strong>5) How many triangles are inside other triangles?</strong></p>
+                                  <span class="textclass">A) </span>
+                                  <input type="checkbox" sn="1" value="1" id="radio1_91" name="9" class="input-hidden">
+                                  <label for="radio1_91"><h3><strong>3</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">B) </span>
+                                  <input type="checkbox" sn="2" value="2" id="radio1_92" name="9" class="input-hidden">
+                                  <label for="radio1_92"><h3><strong>5</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">C) </span>
+                                  <input type="checkbox" sn="3" value="3" id="radio1_93" name="9" class="input-hidden">
+                                  <label for="radio1_93"><h3><strong>6</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">D) </span>
+                                  <input type="checkbox" sn="4" value="4" id="radio1_94" name="9" class="input-hidden">
+                                  <label for="radio1_94"><h3><strong>7</strong></h3>
+                                  </label>
+                              </div>
+                              <hr>
+                              <div id="question6">
+                                  <p><strong>6) How many triangles are inside circles?</strong></p>
+                                  <span class="textclass">A) </span>
+                                  <input type="checkbox" sn="1" value="1" id="radio1_101" name="10" class="input-hidden">
+                                  <label for="radio1_101"><h3><strong>1</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">B) </span>
+                                  <input type="checkbox" sn="2" value="2" id="radio1_102" name="10" class="input-hidden">
+                                  <label for="radio1_102"><h3><strong>2</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">C) </span>
+                                  <input type="checkbox" sn="3" value="3" id="radio1_103" name="10" class="input-hidden">
+                                  <label for="radio1_103"><h3><strong>3</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">D) </span>
+                                  <input type="checkbox" sn="4" value="4" id="radio1_104" name="10" class="input-hidden">
+                                  <label for="radio1_104"><h3><strong>4</strong></h3>
+                                  </label>
+                              </div>
+                              <hr>
+                              <div id="question7">
+                                  <p><strong>7) How many triangles are there?</strong></p>
+                                  <span class="textclass">A) </span>
+                                  <input type="checkbox" sn="1" value="1" id="radio1_111" name="11" class="input-hidden">
+                                  <label for="radio1_111"><h3><strong>11</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">B) </span>
+                                  <input type="checkbox" sn="2" value="2" id="radio1_112" name="11" class="input-hidden">
+                                  <label for="radio1_112"><h3><strong>12</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">C) </span>
+                                  <input type="checkbox" sn="3" value="3" id="radio1_113" name="11" class="input-hidden">
+                                  <label for="radio1_113"><h3><strong>13</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">D) </span>
+                                  <input type="checkbox" sn="4" value="4" id="radio1_114" name="11" class="input-hidden">
+                                  <label for="radio1_114"><h3><strong>15</strong></h3>
+                                  </label>
+                              </div>
+                              <hr>
+                              <div id="question8">
+                                  <p><strong>8) How many circles are there? </strong></p>
+                                  <span class="textclass">A) </span>
+                                  <input type="checkbox" sn="1" value="1" id="radio1_121" name="12" class="input-hidden">
+                                  <label for="radio1_121"><h3><strong>13</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">B) </span>
+                                  <input type="checkbox" sn="2" value="2" id="radio1_122" name="12" class="input-hidden">
+                                  <label for="radio1_122"><h3><strong>15</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">C) </span>
+                                  <input type="checkbox" sn="3" value="3" id="radio1_123" name="12" class="input-hidden">
+                                  <label for="radio1_123"><h3><strong>17</strong></h3>
+                                  </label>
+
+                                  <span class="textclass">D) </span>
+                                  <input type="checkbox" sn="4" value="4" id="radio1_124" name="12" class="input-hidden">
+                                  <label for="radio1_124"><h3><strong>19</strong></h3>
+                                  </label>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+            <button class="btn ppn-btn">Save Answer</button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-dash mt-auto py-3">
+    <div class="container text-center">
+        <span class="text-muted">Copyright © Math Monkey (Malaysia) Sdn Bhd 2021. <br>(Registration No: 200501029641)</span>
+        <div>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms &amp; Conditions</a> |
+            <a href="#">Cookie Policy</a>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- /#page-content-wrapper -->
+<div class="overlay" id="overlay"></div>
+</div>
+<!-- /#wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+    var sidebarCollapse = document.getElementById("sidebarCollapse");
+    var overlay = document.getElementById("overlay");
+    var wrapper = document.getElementById("wrapper");
+
+    sidebarCollapse.addEventListener("click", function () {
+        if (window.innerWidth < 768) {
+            overlay.classList.toggle("active");
+        }
+    });
+
+    overlay.addEventListener("click", function () {
+        wrapper.classList.remove("toggled");
+        overlay.classList.toggle("active");
+    });
+
+    sidebarCollapse.addEventListener("click", function (e) {
+        e.preventDefault();
+        wrapper.classList.toggle("toggled");
+    });
+</script>
+</body>
+
+</html>

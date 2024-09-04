@@ -1457,6 +1457,32 @@ button.btn-close {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.reporting-table {
+    margin-bottom: 40px;
+    border: 1px solid #8a8a8a;
+}
+
+.reporting-table tr:first-child th {
+    font-size: 22px;
+}
+
+.reporting-table th, .reporting-table td {
+    font-size: 20px;
+}
+
+.reporting-table th.getdesign {
+    background-color: #5d5d5d;
+    color: #fff;
+}
+
+.reporting-table tr:last-child td a {
+    font-weight: 600;
+    color: #ff7400;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .btn-danger.ppn-btn-dash i {
@@ -1606,7 +1632,7 @@ p.ques-content {
 .sidebar-contact {
     z-index: 100;
     position: fixed;
-    top: 60%;
+    top: 80%;
     right: -400px;
     transform: translateY(-50%);
     width: 400px;
@@ -1620,6 +1646,7 @@ p.ques-content {
 
 .sidebar-contact.active {
     right: 0;
+    width: 90%;
 }
 
 .sidebar-contact input, .sidebar-contact textarea, .sidebar-contact select {
@@ -1699,7 +1726,7 @@ p.ques-content {
 .dash-assessment-wrap {
     background-position: center center;
     background-size: cover;
-    padding: 120px 20px 70px;
+    padding: 50px 20px 70px;
     position: relative;
     overflow: hidden;
 }
@@ -1737,9 +1764,8 @@ p.ques-content {
 .assess-ques-info-wrap {
     font-weight: 600;
     font-size: 32px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
-
 
 .assess-quest-wrap h3 {
     font-size: 24px;
@@ -1752,7 +1778,7 @@ p.ques-content {
     color: #fff;
     padding: 6px 20px;
     font-size: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .assess-ques-number-wrap {
@@ -1762,7 +1788,7 @@ p.ques-content {
     background: url(../../assets/images/assess-ques-no-bg.png) no-repeat center center;
     background-size: 100% 70%;
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .assess-quest-content {
@@ -1771,7 +1797,7 @@ p.ques-content {
 }
 
 .assess-ans-content {
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
@@ -2464,13 +2490,13 @@ flex-wrap: wrap;
         margin-bottom: 40px;
     }
 
+    .assess-cat-wrap ul li {
+        margin-bottom: 6px;
+    }
+
     @media (max-width: 991px) {
         .wizard-progress {
             flex-direction: column;
-        }
-
-        .wizard-progress .step {
-            /* padding-bottom: 50px; */
         }
 
         .wizard-progress .step:before {
