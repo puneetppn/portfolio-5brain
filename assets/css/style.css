@@ -1632,7 +1632,7 @@ p.ques-content {
 .sidebar-contact {
     z-index: 100;
     position: fixed;
-    top: 80%;
+    top: 60%;
     right: -400px;
     transform: translateY(-50%);
     width: 400px;
@@ -1646,7 +1646,15 @@ p.ques-content {
 
 .sidebar-contact.active {
     right: 0;
-    width: 90%;
+}
+
+.sidebar-contact .toggle {
+    top: 20%;
+    transition: 0.3s ease all;
+}
+
+.sidebar-contact.active .toggle {
+    top: 0;
 }
 
 .sidebar-contact input, .sidebar-contact textarea, .sidebar-contact select {
@@ -2615,6 +2623,10 @@ flex-wrap: wrap;
         width: 100%;
         height: 100%;
         right: -100%;
+    }
+
+    .sidebar-contact.active {
+        width: 90%;
     }
 
     .sidebar-contact .toggle {
