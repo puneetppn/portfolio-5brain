@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard-user.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fa-solid fa-border-all"></i> Dashboard
+                </a>
+                <a href="Assessment-all-assessments.html" class="list-group-item list-group-item-action bg-transparent second-text active ">
+                    <i class="fas fa-users"></i>Assessment
+                </a>
+                <a href="dashboard-reporting.html" class="list-group-item list-group-item-action bg-transparent second-text">
+                    <i class="fas fa-chart-area"></i>Reporting
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="d-flex gap-2 flex-wrap justify-content-between container-fluid dash-user-section p-2 p-md-4">
+                <div class="d-flex align-items-center justify-content-start gap-2"><button id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2 class="child_name">Assessment Child : <span style="color:black;">Man</span></h2>
+            </div>
+            <div class="dropdown">
+                <button class="btn ppn-btn btn-secondary dropdown-toggle ppn-dropdown-dash" type="button" data-bs-toggle="dropdown" aria-expanded="false">Hi, 5BA Admin</button>
+                <ul class="dropdown-menu" style="">
+                    <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+                    <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+                    <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container-fluid p-0 dash-data-wrap dash-assessment">
+          <div class="dash-assessment-wrap dash-assessment-brain-speed dash-assessment-brain-speed-quick_math text-center">
+    <div class="assess-ques-info-wrap">
+        <span class="assess-ques-info">Quick Math</span>
+        - Age
+        <span class="assess-ques-age">7</span>
+    </div>
+
+    <div class="assess-quest-wrap">
+        <h3>Find the matching number pairs as fast as you can.</h3>
+        <div class="assess-quest-content">
+            <form class="form-horizontal form-label-left" role="form" id="login" method="post" action="" autocomplete="off">
+                <p id="starts0" class="font-size-17px">
+                    Do the math questions as fast as you can and key in your answer in the answer box.<br>
+                    Click <span>"START"</span> when you are ready.
+                </p>
+
+                <input style="float: left; display: none;" class="btn btn-success" type="button" value="Start" id="start" />
+                <div id="question1" class="cont"></div>
+                <div id="question2" class="cont"></div>
+                <div id="question3" class="cont"></div>
+                <div id="question4" class="cont"></div>
+                <div id="question5" class="cont"></div>
+                <div id="question6" class="cont"></div>
+                <div id="question7" class="cont"></div>
+                <div id="question8" class="cont"></div>
+                <div id="question9" class="cont"></div>
+                <div id="question10" class="cont"></div>
+                <div id="question11" class="cont"></div>
+                <div id="question12" class="cont"></div>
+                <div id="question13" class="cont"></div>
+                <div id="question14" class="cont"></div>
+                <div id="question15" class="cont"></div>
+                <div id="question16" class="cont"></div>
+                <div id="question17" class="cont"></div>
+                <div id="question18" class="cont"></div>
+                <div id="question19" class="cont"></div>
+                <div id="question20" class="cont"></div>
+                <div id="question21" class="cont"></div>
+                <div id="question22" class="cont"></div>
+                <div id="question23" class="cont"></div>
+                <div id="question24" class="cont"></div>
+                <div id="question25" class="cont"></div>
+                <div id="question26" class="cont"></div>
+                <div id="question27" class="cont"></div>
+                <div id="question28" class="cont"></div>
+                <div id="question29" class="cont"></div>
+                <div id="question30" class="cont"></div>
+                <div id="question31" class="cont"></div>
+                <div id="question32" class="cont"></div>
+                <div id="question33" class="cont"></div>
+                <div id="question34" class="cont"></div>
+                <div id="question35" class="cont"></div>
+                <div id="question36" class="cont"></div>
+                <div id="question37" class="cont"></div>
+                <div id="question38" class="cont"></div>
+                <div id="question39" class="cont"></div>
+                <div id="question40" class="cont"></div>
+                <div id="question41" class="cont"></div>
+                <div id="question42" class="cont"></div>
+                <div id="question43" class="cont"></div>
+                <div id="question44" class="cont"></div>
+                <div id="question45" class="cont"></div>
+                <div id="question46" class="cont"></div>
+                <div id="question47" class="cont"></div>
+                <div id="question48" class="cont"></div>
+                <div id="question49" class="cont"></div>
+                <div id="question50" class="cont"></div>
+                <div id="question51" class="cont"></div>
+                <div id="question52" class="cont"></div>
+                <div id="question53" class="cont"></div>
+                <div id="question54" class="cont"></div>
+                <div id="question55" class="cont"></div>
+                <div id="question56" class="cont"></div>
+                <div id="question57" class="cont"></div>
+                <div id="question58" class="cont"></div>
+                <div id="question59" class="cont"></div>
+                <div id="question60" class="cont"></div>
+                <div id="question61" class="cont"></div>
+                <div id="question62" class="cont"></div>
+                <div id="question63" class="cont"></div>
+                <div id="question64" class="cont"></div>
+                <div id="question65" class="cont"></div>
+                <div id="question66" class="cont"></div>
+                <div id="question67" class="cont"></div>
+                <div id="question68" class="cont"></div>
+                <div id="question69" class="cont"></div>
+                <div id="question70" class="cont"></div>
+                <div id="question71" class="cont"></div>
+                <div id="question72" class="cont"></div>
+                <div id="question73" class="cont"></div>
+                <div id="question74" class="cont"></div>
+                <div id="question75" class="cont"></div>
+                <div id="question76" class="cont"></div>
+                <div id="question77" class="cont"></div>
+                <div id="question78" class="cont"></div>
+                <div id="question79" class="cont"></div>
+                <div id="question80" class="cont"></div>
+                <div id="question81" class="cont"></div>
+                <div id="question82" class="cont"></div>
+                <div id="question83" class="cont"></div>
+                <div id="question84" class="cont"></div>
+                <div id="question85" class="cont"></div>
+                <div id="question86" class="cont"></div>
+                <div id="question87" class="cont"></div>
+                <div id="question88" class="cont"></div>
+                <div id="question89" class="cont"></div>
+                <div id="question90" class="cont"></div>
+                <div id="question91" class="cont"></div>
+                <div id="question92" class="cont"></div>
+                <div id="question93" class="cont"></div>
+                <div id="question94" class="cont"></div>
+                <div id="question95" class="cont"></div>
+                <div id="question96" class="cont"></div>
+                <div id="question97" class="cont"></div>
+                <div id="question98" class="cont"></div>
+                <div id="question99" class="cont"></div>
+                <div id="question100" class="cont"></div>
+                <table id="allhide" class="table" style="">
+                    <!-- <div class="hidden hiding1"> -->
+                    <tbody>
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding1" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>1) </span>
+                                <p><strong>3 + 5 = </strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding1"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding1" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>2) </span>
+                                <p><strong>8 x 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding1"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding1" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>3) </span>
+                                <p><strong>9 + 1 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding1"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding1" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>4) </span>
+                                <p><strong>4 - 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding1"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding1" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>5) </span>
+                                <p><strong>1 x 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding1" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(1)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding2"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding2" style="">
+                            <td class="col-sm-12">
+                                <span>6) </span>
+                                <p><strong>2 + 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding2"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding2" style="">
+                            <td class="col-sm-12">
+                                <span>7) </span>
+                                <p><strong>14 - 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding2"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding2" style="">
+                            <td class="col-sm-12">
+                                <span>8) </span>
+                                <p><strong>3 x 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding2"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding2" style="">
+                            <td class="col-sm-12">
+                                <span>9) </span>
+                                <p><strong>6 - 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding2"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding2" style="">
+                            <td class="col-sm-12">
+                                <span>10) </span>
+                                <p><strong>4 + 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding2" style="">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(2)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding3"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding3" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>11) </span>
+                                <p><strong>6 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding3"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding3" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>12) </span>
+                                <p><strong>8 + 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding3"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding3" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>13) </span>
+                                <p><strong>2 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding3"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding3" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>14) </span>
+                                <p><strong>10 - 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding3"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding3" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>15) </span>
+                                <p><strong>3 + 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding3" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(3)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding4"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding4" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>16) </span>
+                                <p><strong>5 + 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding4"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding4" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>17) </span>
+                                <p><strong>8 + 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding4"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding4" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>18) </span>
+                                <p><strong>5 x 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding4"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding4" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>19) </span>
+                                <p><strong>2 + 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding4"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding4" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>20) </span>
+                                <p><strong>2 x 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding4" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(4)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding5"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding5" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>21) </span>
+                                <p><strong>14 - 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding5"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding5" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>22) </span>
+                                <p><strong>6 + 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding5"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding5" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>23) </span>
+                                <p><strong>4 x 1 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding5"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding5" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>24) </span>
+                                <p><strong>9 - 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding5"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding5" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>25) </span>
+                                <p><strong>8 + 1 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding5" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(5)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding6"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding6" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>26) </span>
+                                <p><strong>14 - 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding6"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding6" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>27) </span>
+                                <p><strong>6 x 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding6"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding6" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>28) </span>
+                                <p><strong>4 + 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding6"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding6" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>29) </span>
+                                <p><strong>17 - 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding6"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding6" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>30) </span>
+                                <p><strong>16 - 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding6" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(6)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding7"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding7" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>31) </span>
+                                <p><strong>2 + 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding7"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding7" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>32) </span>
+                                <p><strong>7 x 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding7"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding7" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>33) </span>
+                                <p><strong>2 + 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding7"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding7" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>34) </span>
+                                <p><strong>6 x 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding7"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding7" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>35) </span>
+                                <p><strong>1 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding7" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(7)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding8"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding8" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>36) </span>
+                                <p><strong>8 - 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding8"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding8" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>37) </span>
+                                <p><strong>5 + 2 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding8"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding8" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>38) </span>
+                                <p><strong>7 + 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding8"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding8" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>39) </span>
+                                <p><strong>4 x 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding8"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding8" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>40) </span>
+                                <p><strong>9 - 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding8" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(8)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding9"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding9" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>41) </span>
+                                <p><strong>9 x 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding9"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding9" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>42) </span>
+                                <p><strong>13 - 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding9"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding9" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>43) </span>
+                                <p><strong>3 + 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding9"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding9" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>44) </span>
+                                <p><strong>2 x 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding9"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding9" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>45) </span>
+                                <p><strong>11 - 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding9" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(9)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding10"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding10" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>46) </span>
+                                <p><strong>9 + 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding10"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding10" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>47) </span>
+                                <p><strong>7 x 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding10"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding10" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>48) </span>
+                                <p><strong>9 - 2 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding10"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding10" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>49) </span>
+                                <p><strong>7 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding10"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding10" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>50) </span>
+                                <p><strong>19 - 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding10" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(10)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding11"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding11" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>51) </span>
+                                <p><strong>5 + 1 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding11"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding11" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>52) </span>
+                                <p><strong>7 x 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding11"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding11" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>53) </span>
+                                <p><strong>3 - 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding11"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding11" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>54) </span>
+                                <p><strong>9 + 2 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding11"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding11" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>55) </span>
+                                <p><strong>8 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding11" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(11)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding12"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding12" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>56) </span>
+                                <p><strong>2 + 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding12"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding12" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>57) </span>
+                                <p><strong>13 - 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding12"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding12" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>58) </span>
+                                <p><strong>7 x 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding12"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding12" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>59) </span>
+                                <p><strong>6 + 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding12"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding12" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>60) </span>
+                                <p><strong>5 - 1 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding12" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(12)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding13"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding13" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>61) </span>
+                                <p><strong>11 - 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding13"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding13" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>62) </span>
+                                <p><strong>2 x 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding13"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding13" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>63) </span>
+                                <p><strong>3 + 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding13"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding13" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>64) </span>
+                                <p><strong>4 x 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding13"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding13" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>65) </span>
+                                <p><strong>12 - 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding13" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(13)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding14"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding14" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>66) </span>
+                                <p><strong>9 + 2 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding14"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding14" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>67) </span>
+                                <p><strong>14 - 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding14"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding14" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>68) </span>
+                                <p><strong>4 - 2 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding14"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding14" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>69) </span>
+                                <p><strong>16 - 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding14"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding14" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>70) </span>
+                                <p><strong>3 x 2 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding14" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(14)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding15"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding15" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>71) </span>
+                                <p><strong>1 + 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding15"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding15" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>72) </span>
+                                <p><strong>2 x 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding15"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding15" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>73) </span>
+                                <p><strong>9 x 1 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding15"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding15" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>74) </span>
+                                <p><strong>8 - 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding15"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding15" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>75) </span>
+                                <p><strong>4 + 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding15" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(15)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding16"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding16" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>76) </span>
+                                <p><strong>9 + 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding16"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding16" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>77) </span>
+                                <p><strong>5 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding16"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding16" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>78) </span>
+                                <p><strong>13 - 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding16"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding16" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>79) </span>
+                                <p><strong>8 + 8 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding16"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding16" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>80) </span>
+                                <p><strong>3 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding16" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(16)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding17"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding17" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>81) </span>
+                                <p><strong>9 - 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding17"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding17" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>82) </span>
+                                <p><strong>3 + 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding17"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding17" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>83) </span>
+                                <p><strong>8 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding17"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding17" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>84) </span>
+                                <p><strong>12 - 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding17"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding17" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>85) </span>
+                                <p><strong>9 x 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding17" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(17)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding18"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding18" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>86) </span>
+                                <p><strong>7 - 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding18"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding18" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>87) </span>
+                                <p><strong>6 + 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding18"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding18" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>88) </span>
+                                <p><strong>15 - 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding18"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding18" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>89) </span>
+                                <p><strong>9 + 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding18"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding18" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>90) </span>
+                                <p><strong>7 x 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding18" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(18)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding19"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding19" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>91) </span>
+                                <p><strong>8 + 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding19"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding19" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>92) </span>
+                                <p><strong>3 + 4 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding19"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding19" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>93) </span>
+                                <p><strong>9 x 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding19"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding19" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>94) </span>
+                                <p><strong>9 - 5 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding19"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding19" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>95) </span>
+                                <p><strong>8 x 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding19" style="display: none;">
+                            <td>
+                                <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(19)">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding20"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding20" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>96) </span>
+                                <p><strong>8 + 3 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding20"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding20" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>97) </span>
+                                <p><strong>8 + 6 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding20"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding20" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>98) </span>
+                                <p><strong>3 x 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding20"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding20" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>99) </span>
+                                <p><strong>10 - 9 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                        <!-- <div class="hidden hiding20"> -->
+                        <tr class="col-md-4 col-sm-4 col-xs-12 hidden hiding20" style="display: none;">
+                            <td class="col-sm-12">
+                                <span>100) </span>
+                                <p><strong>16 - 7 =</strong></p>
+
+                                <input type="number" sn="1" id="radio1" name="ans1[]" autocomplete="off">
+                            </td>
+                        </tr>
+
+                        <tr class="hidden hiding20" style="display: none;">
+                            <td>
+                                <div style="float: right;">
+                                    <input type="hidden" id="timerval" name="user">
+                                    <input type="submit" value="Save Answer" class="next btn btn-success" id="btnsub" name="submits" style="">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- </div> -->
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div>
+        <button class="btn ppn-btn">Next</button>
+    </div>
+</div>  
+        </div>
+
+        <footer class="footer-dash mt-auto py-3">
+            <div class="container text-center">
+                <span class="text-muted">Copyright © Math Monkey (Malaysia) Sdn Bhd 2021. <br>(Registration No: 200501029641)</span>
+                <div>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms &amp; Conditions</a> |
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <div class="overlay" id="overlay"></div>
+</div>
+<!-- /#wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+    var sidebarCollapse = document.getElementById("sidebarCollapse");
+    var overlay = document.getElementById("overlay");
+    var wrapper = document.getElementById("wrapper");
+
+    sidebarCollapse.addEventListener("click", function () {
+        if (window.innerWidth < 768) {
+            overlay.classList.toggle("active");
+        }
+    });
+
+    overlay.addEventListener("click", function () {
+        wrapper.classList.remove("toggled");
+        overlay.classList.toggle("active");
+    });
+
+    sidebarCollapse.addEventListener("click", function (e) {
+        e.preventDefault();
+        wrapper.classList.toggle("toggled");
+    });
+</script>
+</body>
+
+</html>

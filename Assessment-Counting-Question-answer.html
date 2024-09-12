@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard-user.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fa-solid fa-border-all"></i> Dashboard
+                </a>
+                <a href="Assessment-all-assessments.html" class="list-group-item list-group-item-action bg-transparent second-text active ">
+                    <i class="fas fa-users"></i>Assessment
+                </a>
+                <a href="dashboard-reporting.html" class="list-group-item list-group-item-action bg-transparent second-text">
+                    <i class="fas fa-chart-area"></i>Reporting
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="d-flex gap-2 flex-wrap justify-content-between container-fluid dash-user-section p-2 p-md-4">
+                <div class="d-flex align-items-center justify-content-start gap-2"><button id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2 class="child_name">Assessment Child : <span style="color:black;">Man</span></h2>
+            </div>
+            <div class="dropdown">
+                <button class="btn ppn-btn btn-secondary dropdown-toggle ppn-dropdown-dash" type="button" data-bs-toggle="dropdown" aria-expanded="false">Hi, 5BA Admin</button>
+                <ul class="dropdown-menu" style="">
+                    <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+                    <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+                    <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container-fluid p-0 dash-data-wrap dash-assessment">
+            <div class="dash-assessment-wrap dash-assessment-brain-speed dash-assessment-brain-speed-counting text-center">
+                <div class="assess-ques-info-wrap">
+                    <span class="assess-ques-info">Counting</span>
+                    - Age
+                    <span class="assess-ques-age">4</span>
+                </div>
+
+                <div class="assess-quest-wrap">
+                    <h3>Find the matching number pairs as fast as you can.</h3>
+                    <div class="assess-quest-content">
+                        <form class="form-horizontal form-label-left" role="form" id="login" method="post" action="" autocomplete="off">
+                            
+                            <p id="starts0" class="font-size-17px">Count the objects in each questions as fast as you can and key in
+                                your answer in the answer box.<br>
+                                Click <span>"START"</span> when your are ready.</p>
+                                
+
+                                <input style="float: left; display: none;" class="btn btn-success" type="button" value="Start" id="start">
+                                <div id="question1" class="cont">
+                                </div><div id="question2" class="cont">
+                                </div><div id="question3" class="cont">
+                                </div><div id="question4" class="cont">
+                                </div><div id="question5" class="cont">
+                                </div><div id="question6" class="cont">
+                                </div><div id="question7" class="cont">
+                                </div><div id="question8" class="cont">
+                                </div><div id="question9" class="cont">
+                                </div><div id="question10" class="cont">
+                                </div><div id="question11" class="cont">
+                                </div><div id="question12" class="cont">
+                                </div><div id="question13" class="cont">
+                                </div><div id="question14" class="cont">
+                                </div><div id="question15" class="cont">
+                                </div><div id="question16" class="cont">
+                                </div><div id="question17" class="cont">
+                                </div><div id="question18" class="cont">
+                                </div><div id="question19" class="cont">
+                                </div><div id="question20" class="cont">
+                                </div><table id="allhide" class="table" style="">
+                                    <!-- <div class="hidden hiding1"> -->
+                                        <style>
+                                            .x_content::-webkit-scrollbar-track {
+                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                            }
+                                        </style>
+                                        <tbody><tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding1" style="">
+                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                <span>
+                                                    <h1>1) 4505703595</h1>
+
+                                                    <h2>how many 5?</h2>
+                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                </span>
+
+                                            </td>
+                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding1"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding1" style="">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>2) 3673903233</h1>
+
+                                                                    <h2>how many 3?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding1"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding1" style="">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>3) 98979419391</h1>
+
+                                                                    <h2>how many 9?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding1"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding1" style="">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>4) 6964766386</h1>
+
+                                                                    <h2>how many 6?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding1"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding1" style="">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>5) 1811719161</h1>
+
+                                                                    <h2>how many 1?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <tr class="hidden hiding1" style="">
+                                                        <td>
+                                                            <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(1)">
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding2"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding2" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>6)&nbsp; <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-01(2).png" style="height:52px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-01-1.png" style="height:47px; width:35px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding2"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding2" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>7) <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-02(1).png" style="height:50px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-02-1(1).png" style="height:44px; width:55px">?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding2"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding2" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>8) <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-03(1).png" style="height:51px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-03-1.png" style="height:46px; width:45px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding2"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding2" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>9) <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-04(2).png" style="height:47px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-04-1(1).png" style="height:47px; width:26px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding2"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding2" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>10) <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-05(2).png" style="height:49px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-05-1.png" style="height:49px; width:50px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <tr class="hidden hiding2" style="display: none;">
+                                                        <td>
+                                                            <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(2)">
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding3"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding3" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>11) <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-06(1).jpg" style="height:63px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-06(1)(1).png" style="height:43px; width:50px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding3"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding3" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>12) <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-07(1).jpg" style="height:63px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-07(1)(1).png" style="height:44px; width:50px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding3"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding3" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>13)<img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-08(1).jpg" style="height:63px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-08(1).png" style="height:51px; width:35px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding3"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding3" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>14) <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-09(1).jpg" style="height:63px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-09(1)(1).png" style="height:54px; width:50px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding3"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding3" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>15)<img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-10(1).jpg" style="height:63px; width:500px"></h1>
+
+                                                                    <p>how many <img alt="" src="http://5brain.org/admin/questionbank/photos/images/5brain-singapore-malaysia-counting-10(1)(1)(1).png" style="height:46px; width:50px"> ?</p>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <tr class="hidden hiding3" style="display: none;">
+                                                        <td>
+                                                            <input type="button" value="Next" class="next btn btn-success" id="btnnxt" onclick="next_page(3)">
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding4"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding4" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>16) c e f c z c o c p c y</h1>
+
+                                                                    <h2>how many c?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding4"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding4" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>17) p q r p g p e q b l r</h1>
+
+                                                                    <h2>how many q?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding4"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding4" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>18) o u a o d o q c o q</h1>
+
+                                                                    <h2>how many o?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding4"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding4" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>19) k c e o c e c c q c g</h1>
+
+                                                                    <h2>how many c?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <!-- </div> -->
+                                                    <!-- <div class="hidden hiding4"> -->
+                                                        <style>
+                                                            .x_content::-webkit-scrollbar-track {
+                                                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                                            }
+                                                        </style>
+                                                        <tr class="col-md-12 col-sm-12 col-xs-12 hidden hiding4" style="display: none;">
+                                                            <td class="col-md-9 col-sm-9 col-xs-9">
+                                                                <span>
+                                                                    <h1>20) m w m h m d e o m n m</h1>
+
+                                                                    <h2>how many m?</h2>
+                                                                    <input type="number" sn="1" id="radio1" name="ans1[]" class="input-hidden" autocomplete="off">
+                                                                </span>
+
+                                                            </td>
+                                                        </tr>
+                                                                            <!--<tr>
+                                                        <td class="col-md-3 col-sm-3 col-xs-3">
+                                                        <input type="text" sn="1"  id='radio1' name='ans1[]' class="input-hidden" autocomplete="off" />
+                                                        </td>
+                                                    </tr>-->
+                                                    
+
+                                                    <tr class="hidden hiding4" style="display: none;">
+                                                        <td>
+                                                            <div style="float: right;">
+                                                                <input type="hidden" id="timerval" name="user">
+                                                                <input type="submit" value="Save Answer" class="next btn btn-success" id="btnsub" name="submits" style="">
+                                                                
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- </div> -->
+                                                </tbody></table>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn ppn-btn">Next</button>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <footer class="footer-dash mt-auto py-3">
+                                <div class="container text-center">
+                                    <span class="text-muted">Copyright © Math Monkey (Malaysia) Sdn Bhd 2021. <br>(Registration No: 200501029641)</span>
+                                    <div>
+                                        <a href="#">Privacy Policy</a> |
+                                        <a href="#">Terms &amp; Conditions</a> |
+                                        <a href="#">Cookie Policy</a>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                        <!-- /#page-content-wrapper -->
+                        <div class="overlay" id="overlay"></div>
+                    </div>
+                    <!-- /#wrapper -->
+
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+                    <script>
+                        var sidebarCollapse = document.getElementById("sidebarCollapse");
+                        var overlay = document.getElementById("overlay");
+                        var wrapper = document.getElementById("wrapper");
+
+                        sidebarCollapse.addEventListener("click", function () {
+                            if (window.innerWidth < 768) {
+                                overlay.classList.toggle("active");
+                            }
+                        });
+
+                        overlay.addEventListener("click", function () {
+                            wrapper.classList.remove("toggled");
+                            overlay.classList.toggle("active");
+                        });
+
+                        sidebarCollapse.addEventListener("click", function (e) {
+                            e.preventDefault();
+                            wrapper.classList.toggle("toggled");
+                        });
+                    </script>
+                </body>
+
+                </html>
