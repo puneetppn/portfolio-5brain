@@ -888,9 +888,55 @@ a:hover {
 }
 
 button.btn-close {
-    position: absolute;
+    /* position: absolute;
     right: 25px;
-    top: 25px;
+    top: 25px; */
+}
+
+#childFormAssessment input {
+    margin-left: -999px;
+}
+
+#childFormAssessment label {
+    position: relative;
+    float: left;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    margin-top: 1em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4;
+}
+
+#childFormAssessment label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #D1D3D4;
+    border-radius: 3px 0 0 3px;
+}
+
+#childFormAssessment label:checked:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #9CE2AE;
+    background-color: #4DCB6D;
+}
+
+#childFormAssessment input.radio:checked~.lable:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #fff;
+    background-color: #fd7e14;
 }
 
 .benefits-wrap h3 {
@@ -1281,6 +1327,7 @@ padding: 25px;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; 
+    z-index: 10;
 }
 
 #sidebar-wrapper::-webkit-scrollbar {
