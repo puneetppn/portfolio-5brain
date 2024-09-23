@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5 Brain Abilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style type="text/css">
+        
+        
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-center header-nav-item active">
+                        <span><img src="assets/images/menu-item-icon-1.png"></span>
+                        <a class="nav-link text-white" href="#">Child's Brain Abilities</a>
+                    </li>
+                    <li class="nav-item text-center header-nav-item">
+                        <span><img src="assets/images/menu-item-icon-2.png"></span>
+                        <a class="nav-link text-white" href="#">5 Brain Abilities Assessment</a>
+                    </li>
+                    <li class="nav-item text-center header-nav-item">
+                        <span><img src="assets/images/menu-item-icon-3.png"></span>
+                        <a class="nav-link text-white" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item text-center header-nav-item">
+                        <span><img src="assets/images/menu-item-icon-4.png"></span>
+                        <a class="nav-link text-white" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-center">
+                    <a class="btn ppn-btn me-2" data-bs-toggle="modal" data-bs-target="#signInModal">Assessment</a>
+                    <div class="dropdown">
+                        <button class="btn ppn-btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">Hi, Mai</button>
+                        <ul data-bs-popper="static" class="dropdown-menu">
+                            <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+                            <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+                            <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="user-profile-wrap">
+        <div class="container">
+           <div class="row">
+            <div class="col-md-3">
+              <div class="nav flex-column nav-tabs brain-tabs" id="v-tabs" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="personal-information-tab" data-bs-toggle="tab" href="#personal-information" role="tab" aria-controls="personal-information" aria-selected="true">
+                  <img src="https://5brain.org/images/view-profile.png" class="icon" alt="Personal Information Icon"> View Profile
+              </a>
+              <a class="nav-link" id="bookings-tab" data-bs-toggle="tab" href="#bookings" role="tab" aria-controls="bookings" aria-selected="false" tabindex="-1">
+                  <img src="https://5brain.org/images/edit-profile.png" class="icon"> Edit Profile
+              </a>
+              <a class="nav-link" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false" tabindex="-1">
+                  <img src="https://5brain.org/images/change-password.png" class="icon"> Change Password
+              </a>
+              <a class="nav-link" id="confirm-booking-tab" data-bs-toggle="tab" href="#confirm-booking" role="tab" aria-controls="confirm-booking" aria-selected="false" tabindex="-1">
+                  <img src="https://5brain.org/images/change-age.png" class="icon"> View Child Detail
+              </a>
+              <a class="nav-link" id="edit-child-detail-tab" data-bs-toggle="tab" href="#edit-child-detail" role="tab" aria-controls="edit-child-detail" aria-selected="false" tabindex="-1">
+                  <img src="https://5brain.org/images/change-age.png" class="icon"> Add / Edit Child Detail
+              </a>
+          </div>
+      </div>
+      <div class="col-md-9">
+          <div class="tab-content brain-tabs-content" id="v-tabs-content">
+            <div class="tab-pane fade p-5 active show" id="personal-information" role="tabpanel" aria-labelledby="personal-information-tab">
+              <form>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First Name" required="">
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required="">
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group"><div class="input-group-prepend">
+                        <div class="dropdown" id="country-codes">
+                            <span class="input-group-text">
+                              <span class="value">+91</span>
+
+                          </span>
+
+                      </div>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Phone Number" required=""></div>
+              </div>
+              <div class="row mb-3">
+
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="User Name" required="">
+                </div>
+            </div>
+            <div class="d-flex action-btn-group">
+                <button type="submit" class="btn btn-confirm disabled">Update Profile</button>
+            </div>
+        </form>
+    </div>
+    <div class="tab-pane fade p-5" id="bookings" role="tabpanel" aria-labelledby="bookings-tab">
+      <form>
+        <div class="row mb-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First Name" required="">
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" required="">
+        </div>
+
+        <div class="mb-3">
+            <div class="input-group"><div class="input-group-prepend">
+                <div class="dropdown" id="country-codes">
+                    <span class="input-group-text">
+                      <span class="value">+91</span>
+
+                  </span>
+
+              </div>
+          </div>
+          <input type="text" class="form-control" placeholder="Phone Number" required=""></div>
+      </div>
+      <div class="row mb-3">
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="User Name" required="">
+        </div>
+    </div>
+    <div class="d-flex action-btn-group">
+
+        <button type="submit" class="btn btn-confirm">Update Profile</button>
+    </div>
+</form>
+</div>
+<div class="tab-pane fade p-5" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+  <form>
+    <div class="form-group">
+        <div class="mb-3">
+            <div class="input-group" id="show_hide_newpass">
+                <input class="form-control" type="password" name="newpass" id="newpass" placeholder="New Password" required="">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group">
+
+        <div class="mb-3">
+            <div class="input-group" id="show_hide_confirmpass">
+                <input class="form-control" type="password" name="confirmpass" placeholder="Confirm New Password" id="confirmpass">
+                <div class="input-group-append">
+                    <span class="input-group-text" onclick="showpass('confirmpass')"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="d-flex action-btn-group">
+            <button type="submit" class="btn btn-confirm">Update Password</button>
+        </div>
+    </div>
+</form>
+</div>
+<div class="tab-pane fade p-5" id="confirm-booking" role="tabpanel" aria-labelledby="confirm-booking-tab">
+  <form>
+    <div class="row mb-3">
+        <div class="col">
+            <input type="text" class="form-control" readonly="" placeholder="man">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" required="" value="2012-07-25">
+        </div>
+    </div>   
+    <div class="row mb-3">
+        <div class="col">
+            <input type="text" class="form-control" readonly="" placeholder="shiss">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" required="" value="2012-07-25">
+        </div>
+    </div><div class="row mb-3">
+        <div class="col">
+            <input type="text" class="form-control" readonly="" placeholder="leo">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" required="" value="2012-07-25">
+        </div>
+    </div><div class="row mb-3">
+        <div class="col">
+            <input type="text" class="form-control" readonly="" placeholder="laila">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" required="" value="2012-07-25">
+        </div>
+    </div></form>
+</div>
+<div class="tab-pane fade p-5" id="edit-child-detail" role="tabpanel" aria-labelledby="edit-child-detail-tab">
+  <form>
+    <div class="row mb-3">
+        <div class="col">
+            <input type="text" class="form-control" required="" placeholder="man">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" required="" value="2012-07-25">
+        </div>
+    </div> 
+    <div class="row mb-3">
+        <div class="col">
+            <input type="text" class="form-control" required="" placeholder="shiss">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" required="" value="2012-07-25">
+        </div>
+    </div><div class="row mb-3">
+        <div class="col">
+            <input type="text" class="form-control" required="" placeholder="leo">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" required="" value="2012-07-25">
+        </div>
+    </div><div class="row mb-3">
+        <div class="col">
+            <input type="text" class="form-control" required="" placeholder="laila">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" required="" value="2012-07-25">
+        </div>
+    </div>
+    <div class="d-flex action-btn-group">
+        <button type="button" class="btn btn-cancel">Add Child</button>
+        <button type="submit" class="btn btn-confirm">Save Children Detail</button>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+    <div class="row g-4 footer-newsletter">
+        <div class="newsletter">
+            <p>Get to know your child’s brain abilities today!</p>
+            <button class="btn btn-white">Assess my child now</button>
+        </div>
+    </div>
+
+    <div class="row g-4 footer-main">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+            <a href="#"><img src="assets/images/footer-logo.png"></a>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <ul class="footer-menu">
+                <li><a href="#">Child’s Brain Abilities</a></li>
+                <li><a href="#">5 Brain Abilities Assessment</a></li>
+                <li><a href="#">FAQ’s</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row g-4 footer-social-wrap">
+        <img src="assets/images/footer-social-icon.png">
+    </div>
+    <div class="row g-4 text-center footer-copyright">
+        <small>Copyright ©&nbsp;Math Monkey (Malaysia) Sdn Bhd&nbsp;2021.<br>(Registration No:&nbsp;200501029641)<br><a href="#">Privacy Policy</a>&nbsp;|&nbsp;<a href="#">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="#">Cookie Policy</a></small>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
