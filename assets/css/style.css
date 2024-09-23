@@ -2685,9 +2685,9 @@ border-top-right-radius: 3px;
 } */
 
 .tab-content {
-    position: absolute;
+    /* position: absolute;
     top: -9999px;
-    padding: 10px;
+    padding: 10px; */
 }
 
 .brain-table {
