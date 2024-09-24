@@ -1762,7 +1762,6 @@ p.ques-content {
 .toggle:before {
     
     content: 'Questions?';
-    font-family: fontAwesome;
     font-size: 28px;
     color: #fff;
     display: inline-block;
