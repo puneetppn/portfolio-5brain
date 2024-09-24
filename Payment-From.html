@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5 Brain Abilities</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style type="text/css">
+    
+    
+  </style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item text-center header-nav-item active">
+            <span><img src="assets/images/menu-item-icon-1.png"></span>
+            <a class="nav-link text-white" href="#">Child's Brain Abilities</a>
+          </li>
+          <li class="nav-item text-center header-nav-item">
+            <span><img src="assets/images/menu-item-icon-2.png"></span>
+            <a class="nav-link text-white" href="#">5 Brain Abilities Assessment</a>
+          </li>
+          <li class="nav-item text-center header-nav-item">
+            <span><img src="assets/images/menu-item-icon-3.png"></span>
+            <a class="nav-link text-white" href="#">FAQ</a>
+          </li>
+          <li class="nav-item text-center header-nav-item">
+            <span><img src="assets/images/menu-item-icon-4.png"></span>
+            <a class="nav-link text-white" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center justify-content-center">
+          <a class="btn ppn-btn me-2" data-bs-toggle="modal" data-bs-target="#signInModal">Assessment</a>
+          <div class="dropdown">
+            <button class="btn ppn-btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">Hi, Mai</button>
+            <ul data-bs-popper="static" class="dropdown-menu">
+              <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+              <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+              <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="content-wrap">
+    <section class="purchase">
+      <article class="container">
+        <h2>Purchase Form</h2>
+        <form action="payment.php" method="post">
+          <div class="purchase-form-box">            
+            <div class="mb-3">
+              <label for="inputPhoneNumber">Choose Child</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="dropdown" id="country-codes">
+                    <span class="input-group-text">
+                      <span class="value">
+                        <i class="fa-regular fa-user"></i>
+                      </span>
+                      
+                    </span>
+                    
+                  </div>
+                </div>
+                <select name="child_id" id="child_id" required="" class="form-select">
+                  <option value="">Choose Child</option>
+                  <option value="19459">abhi</option>
+                  <option value="19460">ankit</option>
+                </select>
+              </div>
+            </div>
+            
+            
+            <div class="mb-3">
+              <label for="mainpayment">Price</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="dropdown" id="country-codes">
+                    <span class="input-group-text">
+                      <span class="value"><i class="fa-solid fa-dollar-sign"></i></span>
+                      
+                    </span>
+                    
+                  </div>
+                </div>
+                <input class="form-control" type="text" name="mainpayment" id="mainpayment" placeholder="Price: USD 24.95" value="24.95">
+                
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="couponcode">Coupon Code</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="dropdown" id="country-codes">
+                    <span class="input-group-text">
+                      <span class="value"><i class="fa-solid fa-ticket"></i></span>
+                      
+                    </span>
+                    
+                  </div>
+                </div>
+                <span class="input-box coupon-box">
+                  <input class="form-control coupon-entry" type="text" name="couponcode" id="couponcode" placeholder="Enter coupon code">
+                  <button type="button" class="btn coupon-btn btn-sm btn-blue"><i class="fa fa-check" aria-hidden="true"></i> Apply</button>
+                </span>
+              </div>
+            </div>
+            <div id="amountchange">
+              
+              
+              <div><span class="form-label">Discount</span><div class="input-container">
+                <span class="icon"><i class="fa-solid fa-tag"></i></span>
+                <label class="input-field">Discount Amount: <span id="lessamount">00.00</span></label>
+              </div>
+            </div>
+            <div>
+              <span class="form-label">Investment</span>
+              <div class="input-container">
+                <span class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+                <label class="input-field">Your Investment: <span id="payamount">USD 24.95</span></label>
+              </div>
+            </div>
+            
+            <div id="dropin-container"></div>
+            <input type="hidden" name="payumoney" id="payumoney" value="24.95">
+            <input type="hidden" name="couponsamount" id="couponsamount" value="">
+            <div class="d-flex action-btn-group">
+              <button type="button" class="btn btn-cancel" onclick="javascript:window.location.href='pricing.php';"><i class="fa fa-undo" aria-hidden="true"></i> Back</button>
+              <button type="submit" class="btn btn-confirm" name="payment" id="payment"><i class="fa fa-credit-card" aria-hidden="true"></i> Purchase now</button>
+            </div>
+            
+          </div>
+        </div></form>
+      </article>
+    </section>
+  </div>
+  <footer>
+    <div class="row g-4 footer-newsletter">
+      <div class="newsletter">
+        <p>Get to know your child’s brain abilities today!</p>
+        <button class="btn btn-white">Assess my child now</button>
+      </div>
+    </div>
+    
+    <div class="row g-4 footer-main">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+        <a href="#"><img src="assets/images/footer-logo.png"></a>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <ul class="footer-menu">
+          <li><a href="#">Child’s Brain Abilities</a></li>
+          <li><a href="#">5 Brain Abilities Assessment</a></li>
+          <li><a href="#">FAQ’s</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Forum</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row g-4 footer-social-wrap">
+      <img src="assets/images/footer-social-icon.png">
+    </div>
+    <div class="row g-4 text-center footer-copyright">
+      <small>Copyright ©&nbsp;Math Monkey (Malaysia) Sdn Bhd&nbsp;2021.<br>(Registration No:&nbsp;200501029641)<br><a href="#">Privacy Policy</a>&nbsp;|&nbsp;<a href="#">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="#">Cookie Policy</a></small>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
