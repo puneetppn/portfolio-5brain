@@ -1892,7 +1892,7 @@ content: '\f00d';
     left: -9999px;
 }
 
-.assess-option input[type=radio]:checked+label {
+.assess-option input[type=radio]:checked+label, .assess-option input[type=checkbox]:checked+label {
     box-shadow: 0 0 3px 5px #EE7A13;
 }
 
