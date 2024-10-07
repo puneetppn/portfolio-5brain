@@ -2902,6 +2902,14 @@ section.purchase {
     background-size: cover;
 }
 
+#demo-assessment {
+    padding: 130px 0px 0;
+}
+
+#demo-assessment .dash-assessment {
+    margin-bottom: 0;
+}
+
 @media (max-width: 991px) {
     .wizard-progress {
         flex-direction: column;
@@ -2924,6 +2932,9 @@ section.purchase {
     .wizard-progress .step img {
         max-width: 150px;
         width: 100%;
+    }
+    #demo-assessment {
+        padding: 90px 0px 0;
     }
 }
 
