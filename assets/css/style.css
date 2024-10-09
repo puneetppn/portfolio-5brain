@@ -2725,7 +2725,7 @@ border-top-right-radius: 3px;
 }
 
 .content-wrap {
-    padding: 200px 0;
+    padding: 200px 0 120px;
 }
 
 .innerPricingwr h2 {
@@ -2908,6 +2908,46 @@ section.purchase {
 
 #demo-assessment .dash-assessment {
     margin-bottom: 0;
+}
+
+.folio3-1 {
+    font-size: 34px;
+    padding: 0 0;
+    text-align: left;
+    margin: 80px 0 30px;
+    display: block;
+    color: #F7751A;
+    line-height: 40px;
+}
+
+.subtit-head {
+    color: #F7751A;
+    font-weight: 700;
+    font-size: 26px;
+    display: block;
+    margin-top: 40px !important;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.innerp {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 40px;
+    color: #000;
+    padding: 0 0;
+    margin: 5px 0 0;
+    text-align: left;
+}
+
+.folio2-1 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 29px;
+    color: #000;
+    padding: 0 0;
+    margin-top: 0;
+    text-align: left !important;
 }
 
 @media (max-width: 991px) {

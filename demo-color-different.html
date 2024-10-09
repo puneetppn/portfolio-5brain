@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5 Brain Abilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style type="text/css">
+        
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-center header-nav-item active">
+                        <span><img src="assets/images/menu-item-icon-1.png"></span>
+                        <a class="nav-link text-white" href="#">Child's Brain Abilities</a>
+                    </li>
+                    <li class="nav-item text-center header-nav-item">
+                        <span><img src="assets/images/menu-item-icon-2.png"></span>
+                        <a class="nav-link text-white" href="#">5 Brain Abilities Assessment</a>
+                    </li>
+                    <li class="nav-item text-center header-nav-item">
+                        <span><img src="assets/images/menu-item-icon-3.png"></span>
+                        <a class="nav-link text-white" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item text-center header-nav-item">
+                        <span><img src="assets/images/menu-item-icon-4.png"></span>
+                        <a class="nav-link text-white" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-center">
+                    <a class="btn ppn-btn me-2" data-bs-toggle="modal" data-bs-target="#signInModal">Assessment</a>
+                    <div class="dropdown">
+                        <button class="btn ppn-btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">Hi, Mai</button>
+                        <ul data-bs-popper="static" class="dropdown-menu">
+                            <li><a href="profile.php" class="dropdown-item">Profile</a></li>
+                            <li><a class="dropdown-item" href="#chilrenModal" data-toggle="modal">Child to Assess</a></li>
+                            <li><a class="dropdown-item signout" id="signout" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content-wrap">
+        <section class="mainContent full-width clearfix aboutSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-sm-offset-8">
+                        <div style="" id="secondclick">
+                            <div class="pageTitleInfo">
+                                <h2 class="folio3-1" style="margin-bottom: 20px;">Attention – Missing Shape Test
+                                </h2>
+                                <p class="subtit-head">What to do?</p>
+                                <p class="innerp">A few shapes will appear.</p>
+                            </div>
+                            <div class="head">
+                                <p class="innerp">Look at the shapes and remember them as fast as you can.</p>
+                                <p class="innerp">After a few seconds, one of the shape will go missing.</p>
+                                <p class="innerp">Identify the missing shape by clicking on them from the choices given.</p>
+                            </div>
+                            <div class="folio">
+                                <p class="folio2-1">Click <span style="color:#5cb85c">“NEXT”</span> to start.</p>
+                                
+                                <p style="text-align: left;margin-top:10px;">
+                                    <button type="button" class="btn btn-primary btn-sm left" value="Next" id="nexts"><i class="fa fa-arrow-right" aria-hidden="true"></i> NEXT</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-8 col-sm-offset-8">
+                        <div class="innerPricingwr">
+                            <p style="font-size: 24px;margin: 15px 0 30px;"><strong>IMPORTANT NOTE</strong></p>
+                            <p style="font-size: 17px; margin-bottom: 15px;line-height: 24px;">1. It is important for parents to note that this assessment is meant to serve only as a guide for parents to find out and understand more about their child's 5 Brain Abilities.</p>
+                            <p style="font-size: 17px; margin-bottom: 15px;line-height: 24px;">2. The results of the assessment is highly dependent upon the child's physical, emotional and mental states on the day the assessment was taken.</p>
+                            <p style="font-size: 17px; margin-bottom: 15px;line-height: 24px;">3. Parents should bare in mind that the results of the assessment is not an absolute as your child's brain abilities are constantly developing as they grow.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="row g-4 footer-newsletter">
+            <div class="newsletter">
+                <p>Get to know your child’s brain abilities today!</p>
+                <button class="btn btn-white">Assess my child now</button>
+            </div>
+        </div>
+        
+        <div class="row g-4 footer-main">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+                <a href="#"><img src="assets/images/footer-logo.png"></a>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <ul class="footer-menu">
+                    <li><a href="#">Child’s Brain Abilities</a></li>
+                    <li><a href="#">5 Brain Abilities Assessment</a></li>
+                    <li><a href="#">FAQ’s</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row g-4 footer-social-wrap">
+            <img src="assets/images/footer-social-icon.png">
+        </div>
+        <div class="row g-4 text-center footer-copyright">
+            <small>Copyright ©&nbsp;Math Monkey (Malaysia) Sdn Bhd&nbsp;2021.<br>(Registration No:&nbsp;200501029641)<br><a href="#">Privacy Policy</a>&nbsp;|&nbsp;<a href="#">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="#">Cookie Policy</a></small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
